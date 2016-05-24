@@ -1,0 +1,80 @@
+/********************************* Global ***********************************/
+html,body{height:100%;}
+body{font-family: 'Arial', serif !important; 
+background:url(../media/body-tail.gif) repeat scroll center top 
+transparent; margin: 0; line-height: 1.5em !important;}
+#light{font-family: 'Arial', serif !important; 
+background:url(../media/bodybg.png) top left repeat-x; margin: 0; 
+line-height: 1.5em !important; background-color: white;}
+#textcontent a{color: black; font-weight: bold; font-family: 'Lustria', 
+Helvetica, sans-serif !important; font-size: 16px;}
+#textcontent p{color: black; font-size: 16px; font-family: 'Lustria', 
+Helvetica, sans-serif !important; margin-bottom: 14px;}
+.italic{font-style: italic;}
+.bold{font-weight: bold;}
+.main{width:980px; margin: 0 auto; background:url(../media/main-tail.png) 
+center top repeat;}
+.paddingleft20{padding-left: 20px;}
+.textdecorationnone{text-decoration: none;}
+.center{text-align: center;}
+.margintop0{margin-top: 0;}
+.marginbottom0{margin-bottom: 0 !important;}
+.displayblock{display: block;}
+.displayinline{display: inline;}
+.fontsizelarge{font-size: large !important;}
+.floatright{float: right;}
+figure{-webkit-margin-start: 0;}
+figure{-webkit-margin-end: 10px; -webkit-margin-before: 0;}
+figcaption{text-align: center; display: block; padding-left: 21px;}
+.schoollogos{padding: 20px 40px;}
+.scholarshiplogos{padding: 30px 100px 0 100px;}
+.width148{width: 148px;}
+.alignleft{text-align: left;}
+a{text-decoration: none}
+table {border-collapse: collapse; margin: 0 20px}
+table, td, th {border: 1px solid black}
+td{padding: 5px}
+/********************************* Header ***********************************/
+header{clear: both; width:100%; background:url(../media/body-tail.gif) center top repeat; padding: 0px 0px 120px 0px}
+#headerlogo{color: #fff; float: left; padding-top: 45px;}
+#logo{font-family:'Kite One'; font-size: 25px; color: white; letter-spacing:-1.5px; font-weight: bold; padding-left: 20px;}
+#headermenu{float: right; margin: 0;}
+#headermenu li{list-style: none; font-weight: bold; float:left; font-size: 
+16px !important; color: white;}
+#headermenu li a{color: white; display: block; padding: 48px 20px;}
+.activemenu{background-color: #e8112d; color: white; padding: 48px 20px;}
+#headermenu li:hover{background-color: #e8112d; color: white;}
+#headermenu a{color: #e8112d; text-decoration: none;}
+#headermenu a.active, #headermenu a:hover{text-decoration: none; color: 
+#fff;}
+/********************************* Content **********************************/
+#contentarea .main{padding: 12px 0 0px; background-color: white; 
+padding-bottom: 45px;}
+#textcontent h1, h2, h3, p, img{padding-left: 20px; padding-right: 10px;}
+#textcontent h1{font-size: x-large;}
+#textcontent h2{font-size: 1em;}
+#textcontent ul{padding-left: 60px; padding-right: 30px}
+.underline{text-decoration: underline;}
+#contentarea a{color: #e8112d; text-decoration: none;}
+#contentarea a:active{color: #e8112d; text-decoration: underline;}
+#contentarea a:visited{color: #e8112d}
+#contentarea a:hover{color: #e8112d; text-decoration: underline;}
+/********************************* Footer ***********************************/
+footer{clear: both; width:100%; background:url(../media/body-tail.gif) 
+center top repeat; padding: 0px 0px 120px 0px; clear: both;}
+#footercopyright{color: #fff; float: right; padding-top: 30px; font-size: 
+16px; font-weight: bold; padding-top: 51px;}
+#logo{font-family:'Kite One'; font-size: 25px; color: white; 
+letter-spacing:-1.5px; font-weight: bold;}
+#calendarlink{font-family:'Kite One'; font-size: 16px; color: white; 
+letter-spacing:-1.5px; font-weight: bold; padding-left: 20px;}
+#calendarlink:hover{color: #e8112d !important}
+#footermenu{float: right; margin: 0;}
+#footermenu li{list-style: none; font-weight: bold; float:left; padding: 
+48px 20px; font-size: 16px !important;}
+#footermenu a li{color: white; display: block;}
+.activemenu{color: white;}
+#footermenu li a:hover{color: #e8112d !important;}
+#footermenu a{color: white; text-decoration: none;}
+#footermenu a.active, #headermenu a:hover{text-decoration: none;}
+.activefooter{color: #e8112d !important;}
