@@ -42,9 +42,9 @@ header{clear: both; width:100%; background:url(../media/body-tail.gif) center to
 #headermenu li{list-style: none; font-weight: bold; float:left; font-size: 
 16px !important; color: white;}
 #headermenu li a{color: white; display: block; padding: 48px 20px;}
-.activemenu{background-color: #e8112d; color: white; padding: 48px 20px;}
-#headermenu li:hover{background-color: #e8112d; color: white;}
-#headermenu a{color: #e8112d; text-decoration: none;}
+.activemenu{background-color: #274490; color: white; padding: 48px 20px;}
+#headermenu li:hover{background-color: #274490; color: white;}
+#headermenu a{color: #274490; text-decoration: none;}
 #headermenu a.active, #headermenu a:hover{text-decoration: none; color: 
 #fff;}
 /********************************* Content **********************************/
