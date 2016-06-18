@@ -1,8 +1,8 @@
 /********************************* Global ***********************************/
 html,body{height:100%;}
 body{font-family: 'Arial', serif !important; 
-background:url(../media/body-tail.gif) repeat scroll center top 
-transparent; margin: 0; line-height: 1.5em !important;}
+background:black/*url(../media/body-tail.gif) repeat scroll center top 
+transparent; margin: 0; line-height: 1.5em !important;*/}
 #light{font-family: 'Arial', serif !important; 
 background:url(../media/bodybg.png) top left repeat-x; margin: 0; 
 line-height: 1.5em !important; background-color: white;}
@@ -35,7 +35,7 @@ table {border-collapse: collapse; margin: 0 20px}
 table, td, th {border: 1px solid black}
 td{padding: 5px}
 /********************************* Header ***********************************/
-header{clear: both; width:100%; background:url(../media/body-tail.gif) center top repeat; padding: 0px 0px 120px 0px}
+header{clear: both; width:100%; background:black/*url(../media/body-tail.gif) center top repeat; padding: 0px 0px 120px 0px*/}
 #headerlogo{color: #fff; float: left; padding-top: 45px;}
 #logo{font-family:'Kite One'; font-size: 25px; color: white; letter-spacing:-1.5px; font-weight: bold; padding-left: 20px;}
 #headermenu{float: right; margin: 0;}
@@ -60,8 +60,8 @@ padding-bottom: 45px;}
 #contentarea a:visited{color: #274490}
 #contentarea a:hover{color: #274490; text-decoration: underline;}
 /********************************* Footer ***********************************/
-footer{clear: both; width:100%; background:url(../media/body-tail.gif) 
-center top repeat; padding: 0px 0px 120px 0px; clear: both;}
+footer{clear: both; width:100%; background:black/*url(../media/body-tail.gif) 
+center top repeat; padding: 0px 0px 120px 0px; clear: both;*/}
 #footerflag{color: #fff; float: left; padding-top: 48px;}
 #footercopyright{color: #fff; float: right; padding-top: 30px; font-size: 
 16px; font-weight: bold; padding-top: 51px;}
