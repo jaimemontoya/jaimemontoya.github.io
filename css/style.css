@@ -55,10 +55,10 @@ padding-bottom: 45px;}
 #textcontent h2{font-size: 1em;}
 #textcontent ul{padding-left: 60px; padding-right: 30px}
 .underline{text-decoration: underline;}
-#contentarea a{color: #e8112d; text-decoration: none;}
-#contentarea a:active{color: #e8112d; text-decoration: underline;}
-#contentarea a:visited{color: #e8112d}
-#contentarea a:hover{color: #e8112d; text-decoration: underline;}
+#contentarea a{color: #274490; text-decoration: none;}
+#contentarea a:active{color: #274490; text-decoration: underline;}
+#contentarea a:visited{color: #274490}
+#contentarea a:hover{color: #274490; text-decoration: underline;}
 /********************************* Footer ***********************************/
 footer{clear: both; width:100%; background:url(../media/body-tail.gif) 
 center top repeat; padding: 0px 0px 120px 0px; clear: both;}
@@ -69,13 +69,13 @@ center top repeat; padding: 0px 0px 120px 0px; clear: both;}
 letter-spacing:-1.5px; font-weight: bold;}
 #calendarlink{font-family:'Kite One'; font-size: 16px; color: white; 
 letter-spacing:-1.5px; font-weight: bold; padding-left: 20px;}
-#calendarlink:hover{color: #e8112d !important}
+#calendarlink:hover{color: #274490 !important}
 #footermenu{float: right; margin: 0;}
 #footermenu li{list-style: none; font-weight: bold; float:left; padding: 
 48px 20px; font-size: 16px !important;}
 #footermenu a li{color: white; display: block;}
 .activemenu{color: white;}
-#footermenu li a:hover{color: #e8112d !important;}
+#footermenu li a:hover{color: #274490 !important;}
 #footermenu a{color: white; text-decoration: none;}
 #footermenu a.active, #headermenu a:hover{text-decoration: none;}
-.activefooter{color: #e8112d !important;}
+.activefooter{color: #274490 !important;}
