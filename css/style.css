@@ -35,7 +35,7 @@ table {border-collapse: collapse; margin: 0 20px}
 table, td, th {border: 1px solid black}
 td{padding: 5px}
 /********************************* Header ***********************************/
-header{clear: both; width:100%; background:url(../media/body-tail.gif) center top repeat; padding: 0px 0px 120px 0px}
+header{clear: both; width:100%; background:black}
 #headerlogo{color: #fff; float: left; padding-top: 45px;}
 #logo{font-family:'Kite One'; font-size: 25px; color: white; letter-spacing:-1.5px; font-weight: bold; padding-left: 20px;}
 #headermenu{float: right; margin: 0;}
