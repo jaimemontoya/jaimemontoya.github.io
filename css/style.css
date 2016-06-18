@@ -3,8 +3,7 @@ html,body{height:100%;}
 body{font-family: 'Arial', serif !important; 
 /*background:url(../media/body-tail.gif) repeat scroll center top 
 transparent; margin: 0; line-height: 1.5em !important;}*/
-background:#ff0000 repeat scroll center top 
-transparent; margin: 0; line-height: 1.5em !important;}
+background-color:#ff0000}
 #light{font-family: 'Arial', serif !important; 
 background:url(../media/bodybg.png) top left repeat-x; margin: 0; 
 line-height: 1.5em !important; background-color: white;}
