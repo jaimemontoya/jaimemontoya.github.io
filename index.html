@@ -22,7 +22,10 @@
             						.addClass( feedback.vertical )
             						.addClass( feedback.horizontal )
             						.appendTo( this );
-					        }
+					        },
+					        content: function() {
+        						return $(this).attr('title');
+    						}
       					}
     				});
   			});
@@ -71,9 +74,6 @@
     				bottom: -20px;
     				top: auto;
   			}
-  			.tooltip-inner {
-    				white-space:pre-wrap;
-			}
   		</style>
 	</head>
 	<body>
@@ -118,8 +118,8 @@
 						<p><a href="http://www.telegraph.co.uk/news/2016/06/26/i-cannot-stress-too-much-that-britain-is-part-of-europe--and-alw/">Writing in Sunday’s Telegraph</a>, former London Mayor Boris Johnson, the leader of the ruling Conservative Party’s Brexit movement, flatly denied that the “Leave” voters were motivated by “anxieties about immigration.”</p>
 						<p>Instead, he argued, the paramount issue was <span class="highlight" title="Shouldn't the UK, as a sovereign nation, have the right to control its immigration laws?">“control”</span>—a more nebulous public discontent with bureaucratic rule-making from EU headquarters in Brussels.</p>
 						<p>Yet British Prime Minister David Cameron, an EU supporter who announced plans to resign the day after the vote, said just the opposite Tuesday during his final summit with other EU leaders. Fear of <span class="highlight" title="The scenario of a massive exodus from underdeveloped to developed countries is debated at https://www.quora.com/How-feasible-is-a-World-without-borders:
-						e
-						g
+						<br>e
+						<br>g
 						d">mass immigration</span> was “a driving factor” behind the vote, he acknowledged.</p>
 						<img src="media/netmigrationtouk.png" width="750" height="502" alt="" title="">
 						<p>An anti-immigrant tone was an inescapable feature of the Leave campaign. At one point, right-wing politician Nigel Farage, one of its leaders, introduced a poster depicting a crowd of Middle Eastern refugees. Even though the refugees aren’t a major issue in Britain, the poster bore the legend: “Breaking Point: The EU has failed us all” and established a certain exploitative tone in the campaign.</p>
