@@ -25,10 +25,7 @@
 					        }
       					},
       					content: function() {
-        					var element = $( this );
-        					if ( element.is( "[title]" ) ) {
-            						return element.attr( "title" );
-        					}
+        					return $(this).attr('title');
     					}
     				});
   			});
