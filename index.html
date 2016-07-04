@@ -25,7 +25,10 @@
 					        }
       					},
       					content: function() {
-        					return $(this).attr('title');
+        					var element = $( this );
+        					if ( element.is( "[title]" ) ) {
+            						return element.attr( "title" );
+        					}
     					}
     				});
   			});
