@@ -23,14 +23,12 @@
             						.addClass( feedback.horizontal )
             						.appendTo( this );
 					        }
+					        content: function() {
+        						return $(this).attr('title');
+    						}
       					}
     				});
   			});
-  			$('span').tooltip({
-    				content: function() {
-        				return $(this).attr('title');
-    				}
-			});
   		</script>
   		<style>
   			.ui-tooltip, .arrow:after {
