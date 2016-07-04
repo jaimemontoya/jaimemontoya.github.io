@@ -48,7 +48,7 @@ header{clear: both; width:100%; background:url(../media/body-black.gif) center t
 #headermenu a.active, #headermenu a:hover{text-decoration: none; color: 
 #fff;}
 /********************************* Content **********************************/
-img{text-align: center}
+img{display: block; margin-left: auto; margin-right: auto}
 #contentarea .main{padding: 12px 0 0px; background-color: white; 
 padding-bottom: 45px;}
 #textcontent h1, h2, h3, p, img{padding-left: 20px; padding-right: 10px;}
