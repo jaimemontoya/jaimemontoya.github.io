@@ -25,7 +25,7 @@ center top repeat;}
 .floatright{float: right;}
 figure{-webkit-margin-start: 0;}
 figure{-webkit-margin-end: 10px; -webkit-margin-before: 0;}
-figcaption{text-align: center; display: block; padding-left: 21px;}
+figcaption{text-align: center; display: block; padding-left: 21px; font-size: 0.5em}
 .schoollogos{padding: 20px 40px;}
 .scholarshiplogos{padding: 30px 100px 0 100px;}
 .width148{width: 148px;}
