@@ -22,10 +22,8 @@
             						.addClass( feedback.vertical )
             						.addClass( feedback.horizontal )
             						.appendTo( this );
+            						return $(this).attr('title');
 					        }
-					        content: function() {
-        						return $(this).attr('title');
-    						}
       					}
     				});
   			});
