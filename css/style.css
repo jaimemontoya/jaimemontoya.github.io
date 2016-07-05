@@ -2,7 +2,7 @@
 html,body{height:100%;}
 body{font-family: 'Arial', serif !important; 
 background:url(../media/body-black.gif) repeat scroll center top 
-transparent; margin: 0; line-height: 1.5em !important;}
+transparent; margin: 0; line-height: 1.5em !important; height:300px}
 #light{font-family: 'Arial', serif !important; 
 background:url(../media/bodybg.png) top left repeat-x; margin: 0; 
 line-height: 1.5em !important; background-color: white;}
@@ -51,7 +51,7 @@ header{clear: both; width:100%; background:url(../media/body-black.gif) center t
 img{display: block; margin-left: auto; margin-right: auto}
 .highlight{background-color:#FFFF00}
 #contentarea .main{padding: 12px 0 0px; background-color: white; 
-padding-bottom: 45px; height:300px;}
+padding-bottom: 45px}
 #textcontent h1, h2, h3, p, img{padding-left: 20px; padding-right: 10px;}
 #textcontent h1{font-size: x-large;}
 #textcontent h2{font-size: 1em;}
