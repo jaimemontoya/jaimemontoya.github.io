@@ -1,1 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  		ga('create', 'UA-83600169-1', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer4", {
+				zoomEnabled: false,
+				animationEnabled: true,
+				title: {
+					text: "Work history"
+				},
+				axisY2: {
+					valueFormatString: "0.0 h",
+
+					maximum: 14,
+					interval: 3.5,
+					interlacedColor: "#F5F5F5",
+					gridColor: "#D7D7D7",
+					tickColor: "#D7D7D7"
+				},
+				theme: "theme2",
+				toolTip: {
+					shared: true
+				},
+				legend: {
+					verticalAlign: "bottom",
+					horizontalAlign: "center",
+					fontSize: 15,
+					fontFamily: "Lucida Sans Unicode"
+				},
+				data: [{
+					type: "line",
+					lineThickness: 3,
+					axisYType: "secondary",
+					showInLegend: true,
+					name: "Hours",
+					dataPoints: [
+					{ x: new Date(2016, 6, 16), y: 0.00 },
+					{ x: new Date(2016, 6, 17), y: 2.32 },
+					{ x: new Date(2016, 6, 18), y: 5.97 },
+					{ x: new Date(2016, 6, 19), y: 7.15 },
+					{ x: new Date(2016, 6, 20), y: 8.75 },
+					{ x: new Date(2016, 6, 21), y: 7.96 },
+					{ x: new Date(2016, 6, 22), y: 5.87 },
+					{ x: new Date(2016, 6, 23), y: 2.38 },
+					{ x: new Date(2016, 6, 24), y: 0.00 },
+					{ x: new Date(2016, 6, 25), y: 8.74 },
+					{ x: new Date(2016, 6, 26), y: 12.84 },
+					{ x: new Date(2016, 6, 27), y: 4.09 },
+					{ x: new Date(2016, 6, 28), y: 5.98 },
+					{ x: new Date(2016, 6, 29), y: 12.93 },
+					{ x: new Date(2016, 6, 30), y: 5.16 },
+					{ x: new Date(2016, 6, 31), y: 6.10 },
+					{ x: new Date(2016, 7, 1), y: 6.43 },
+					{ x: new Date(2016, 7, 2), y: 13.08 },
+					{ x: new Date(2016, 7, 3), y: 8.12 },
+					{ x: new Date(2016, 7, 4), y: 7.47 },
+					{ x: new Date(2016, 7, 5), y: 5.37 },
+					{ x: new Date(2016, 7, 6), y: 0.00 },
+					{ x: new Date(2016, 7, 7), y: 0.58 },
+					{ x: new Date(2016, 7, 8), y: 0.43 },
+					{ x: new Date(2016, 7, 9), y: 2.74 },
+					{ x: new Date(2016, 7, 10), y: 2.66 },
+					{ x: new Date(2016, 7, 11), y: 3.30 },
+					{ x: new Date(2016, 7, 12), y: 3.37 },
+					{ x: new Date(2016, 7, 13), y: 3.83 },
+					{ x: new Date(2016, 7, 14), y: 0.00 },
+					{ x: new Date(2016, 7, 15), y: 9.65 },
+					{ x: new Date(2016, 7, 16), y: 5.68 },
+					{ x: new Date(2016, 7, 17), y: 2.51 },
+					{ x: new Date(2016, 7, 18), y: 7.23 },
+					{ x: new Date(2016, 7, 19), y: 9.00 },
+					{ x: new Date(2016, 7, 20), y: 0.00 },
+					{ x: new Date(2016, 7, 21), y: 0.00 },
+					{ x: new Date(2016, 7, 22), y: 5.23 },
+					{ x: new Date(2016, 7, 23), y: 5.44 },
+					{ x: new Date(2016, 7, 24), y: 5.83 },
+					{ x: new Date(2016, 7, 25), y: 9.80 },
+					{ x: new Date(2016, 7, 26), y: 6.82 },
+					{ x: new Date(2016, 7, 27), y: 0.00 },
+					{ x: new Date(2016, 7, 28), y: 0.00 },
+					{ x: new Date(2016, 7, 29), y: 5.99 },
+					{ x: new Date(2016, 7, 30), y: 1.64 },
+					{ x: new Date(2016, 7, 31), y: 5.95 },
+					{ x: new Date(2016, 8, 1), y: 3.72 },
+					{ x: new Date(2016, 8, 2), y: 2.10 },
+					{ x: new Date(2016, 8, 3), y: 2.40 },
+					{ x: new Date(2016, 8, 4), y: 3.15 },
+					{ x: new Date(2016, 8, 5), y: 6.27 },
+					{ x: new Date(2016, 8, 6), y: 0.22 },
+					{ x: new Date(2016, 8, 7), y: 0.00 },
+					{ x: new Date(2016, 8, 8), y: 10.25 },
+					{ x: new Date(2016, 8, 9), y: 13.55 }
+					]
+				},
+				{
+					type: "line",
+					lineThickness: 3,
+					showInLegend: true,
+					name: "Average trend",
+					axisYType: "secondary",
+					dataPoints: [
+					 { x: new Date(2016, 6, 16), y: 0.00 },
+					 { x: new Date(2016, 6, 17), y: 1.16 },
+					 { x: new Date(2016, 6, 18), y: 2.76 },
+					 { x: new Date(2016, 6, 19), y: 3.86 },
+					 { x: new Date(2016, 6, 20), y: 4.84 },
+					 { x: new Date(2016, 6, 21), y: 5.36 },
+					 { x: new Date(2016, 6, 22), y: 5.43 },
+					 { x: new Date(2016, 6, 23), y: 5.05 },
+					 { x: new Date(2016, 6, 24), y: 4.49 },
+					 { x: new Date(2016, 6, 25), y: 4.91 },
+					 { x: new Date(2016, 6, 26), y: 5.63 },
+					 { x: new Date(2016, 6, 27), y: 5.50 },
+					 { x: new Date(2016, 6, 28), y: 5.54 },
+					 { x: new Date(2016, 6, 29), y: 6.07 },
+					 { x: new Date(2016, 6, 30), y: 6.01 },
+					 { x: new Date(2016, 6, 31), y: 6.01 },
+					 { x: new Date(2016, 7, 1), y: 6.04 },
+					 { x: new Date(2016, 7, 2), y: 6.43 },
+					 { x: new Date(2016, 7, 3), y: 6.52 },
+					 { x: new Date(2016, 7, 4), y: 6.57 },
+					 { x: new Date(2016, 7, 5), y: 6.51 },
+					 { x: new Date(2016, 7, 6), y: 6.21 },
+					 { x: new Date(2016, 7, 7), y: 5.97 },
+					 { x: new Date(2016, 7, 8), y: 5.74 },
+					 { x: new Date(2016, 7, 9), y: 5.62 },
+					 { x: new Date(2016, 7, 10), y: 5.50 },
+					 { x: new Date(2016, 7, 11), y: 5.42 },
+					 { x: new Date(2016, 7, 12), y: 5.35 },
+					 { x: new Date(2016, 7, 13), y: 5.30 },
+					 { x: new Date(2016, 7, 14), y: 5.12 },
+					 { x: new Date(2016, 7, 15), y: 5.27 },
+					 { x: new Date(2016, 7, 16), y: 5.28 },
+					 { x: new Date(2016, 7, 17), y: 5.19 },
+					 { x: new Date(2016, 7, 18), y: 5.25 },
+					 { x: new Date(2016, 7, 19), y: 5.36 },
+					 { x: new Date(2016, 7, 20), y: 5.21 },
+					 { x: new Date(2016, 7, 21), y: 5.07 },
+					 { x: new Date(2016, 7, 22), y: 5.08 },
+					 { x: new Date(2016, 7, 23), y: 5.09 },
+					 { x: new Date(2016, 7, 24), y: 5.10 },
+					 { x: new Date(2016, 7, 25), y: 5.22 },
+					 { x: new Date(2016, 7, 26), y: 5.26 },
+					 { x: new Date(2016, 7, 27), y: 5.13 },
+					 { x: new Date(2016, 7, 28), y: 5.02 },
+					 { x: new Date(2016, 7, 29), y: 5.04 },
+					 { x: new Date(2016, 7, 30), y: 4.97 },
+					 { x: new Date(2016, 7, 31), y: 4.99 },
+					 { x: new Date(2016, 8, 1), y: 4.96 },
+					 { x: new Date(2016, 8, 2), y: 4.90 },
+					 { x: new Date(2016, 8, 3), y: 4.85 },
+					 { x: new Date(2016, 8, 4), y: 4.82 },
+					 { x: new Date(2016, 8, 5), y: 4.85 },
+					 { x: new Date(2016, 8, 6), y: 4.76 },
+					 { x: new Date(2016, 8, 7), y: 4.67 },
+					 { x: new Date(2016, 8, 8), y: 4.77 },
+					 { x: new Date(2016, 8, 8), y: 4.93 }
+					]
+				},
+				{
+					type: "line",
+					lineThickness: 3,
+					showInLegend: true,
+					name: "Global average",
+					axisYType: "secondary",
+					dataPoints: [
+					 { x: new Date(2016, 6, 16), y: 5.02 },
+ 					 { x: new Date(2016, 6, 17), y: 5.02 },
+ 					 { x: new Date(2016, 6, 18), y: 5.02 },
+ 					 { x: new Date(2016, 6, 19), y: 5.02 },
+ 					 { x: new Date(2016, 6, 20), y: 5.02 },
+ 					 { x: new Date(2016, 6, 21), y: 5.02 },
+ 					 { x: new Date(2016, 6, 22), y: 5.02 },
+ 					 { x: new Date(2016, 6, 23), y: 5.02 },
+ 					 { x: new Date(2016, 6, 24), y: 5.02 },
+ 					 { x: new Date(2016, 6, 25), y: 5.02 },
+ 					 { x: new Date(2016, 6, 26), y: 5.02 },
+ 					 { x: new Date(2016, 6, 27), y: 5.02 },
+					 { x: new Date(2016, 6, 28), y: 5.02 },
+					 { x: new Date(2016, 6, 29), y: 5.02 },
+					 { x: new Date(2016, 6, 30), y: 5.02 },
+					 { x: new Date(2016, 6, 31), y: 5.02 },
+					 { x: new Date(2016, 7, 1), y: 5.02 },
+					 { x: new Date(2016, 7, 2), y: 5.02 },
+					 { x: new Date(2016, 7, 3), y: 5.02 },
+					 { x: new Date(2016, 7, 4), y: 5.02 },
+					 { x: new Date(2016, 7, 5), y: 5.02 },
+					 { x: new Date(2016, 7, 6), y: 5.02 },
+					 { x: new Date(2016, 7, 7), y: 5.02 },
+					 { x: new Date(2016, 7, 8), y: 5.02 },
+					 { x: new Date(2016, 7, 9), y: 5.02 },
+					 { x: new Date(2016, 7, 10), y: 5.02 },
+					 { x: new Date(2016, 7, 11), y: 5.02 },
+					 { x: new Date(2016, 7, 12), y: 5.02 },
+					 { x: new Date(2016, 7, 13), y: 5.02 },
+					 { x: new Date(2016, 7, 14), y: 5.02 },
+					 { x: new Date(2016, 7, 15), y: 5.02 },
+					 { x: new Date(2016, 7, 16), y: 5.02 },
+					 { x: new Date(2016, 7, 17), y: 5.02 },
+					 { x: new Date(2016, 7, 18), y: 5.02 },
+					 { x: new Date(2016, 7, 19), y: 5.02 },
+					 { x: new Date(2016, 7, 20), y: 5.02 },
+					 { x: new Date(2016, 7, 21), y: 5.02 },
+					 { x: new Date(2016, 7, 22), y: 5.02 },
+					 { x: new Date(2016, 7, 23), y: 5.02 },
+					 { x: new Date(2016, 7, 24), y: 5.02 },
+					 { x: new Date(2016, 7, 25), y: 5.02 },
+					 { x: new Date(2016, 7, 26), y: 5.02 },
+					 { x: new Date(2016, 7, 27), y: 5.02 },
+					 { x: new Date(2016, 7, 28), y: 5.02 },
+					 { x: new Date(2016, 7, 29), y: 5.02 },
+					 { x: new Date(2016, 7, 30), y: 5.02 },
+					 { x: new Date(2016, 7, 31), y: 5.02 },
+					 { x: new Date(2016, 8, 1), y: 5.02 },
+					 { x: new Date(2016, 8, 2), y: 5.02 },
+					 { x: new Date(2016, 8, 3), y: 5.02 },
+           				 { x: new Date(2016, 8, 4), y: 5.02 },
+           				 { x: new Date(2016, 8, 5), y: 5.02 },
+           				 { x: new Date(2016, 8, 6), y: 5.02 },
+           				 { x: new Date(2016, 8, 7), y: 5.02 },
+           				 { x: new Date(2016, 8, 8), y: 5.02 }
+					]
+				}
+				],
+				legend: {
+					cursor: "pointer",
+					itemclick: function (e) {
+						if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+							e.dataSeries.visible = false;
+						}
+						else {
+							e.dataSeries.visible = true;
+						}
+						chart.render();
+					}
+				}
+			});
+
+			chart.render();
+		}
+	</script>
+	<script src="canvasjs.min.js"></script>
+	<title>Work history</title>
+</head>
+
+<body>
+
+	<div id="chartContainer4"></div>
+</body>
+
+</html>
