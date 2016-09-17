@@ -19,7 +19,7 @@
     				sum = sum + points[i];
 			}
 			var average = sum/points.length;
-			console.log(points.slice(0,2));
+			console.log(points.slice(0,2).reduce(add,0));
 			/*console.log(points.slice(0,2).reduce(add,0));*/
 			var chart = new CanvasJS.Chart("chartContainer4", {
 				zoomEnabled: false,
