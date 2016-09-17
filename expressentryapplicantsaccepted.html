@@ -19,6 +19,7 @@
     				sum = sum + points[i];
 			}
 			var average = sum/points.length;
+			console.log(points.slice(0,2).reduce(add,0));
 			var chart = new CanvasJS.Chart("chartContainer4", {
 				zoomEnabled: false,
 				animationEnabled: true,
@@ -103,7 +104,7 @@
 					axisYType: "secondary",
 					dataPoints: [
 					{ x: new Date(2015, 0, 31), y: points[0] },
-					{ x: new Date(2015, 1, 7), y: (points[0]+points[1])/2 },
+					{ x: new Date(2015, 1, 7), y: (points.slice(0,2).reduce(add,0))/2 },
 					{ x: new Date(2015, 1, 20), y: (points[0]+points[1]+points[2])/3 },
 					{ x: new Date(2015, 1, 27), y: (points[0]+points[1]+points[2]+points[3])/4 },
 					{ x: new Date(2015, 2, 20), y: (points[0]+points[1]+points[2]+points[3]+points[4])/5 },
