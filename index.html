@@ -28,8 +28,8 @@
 				axisY2: {
 					valueFormatString: "0.0 h",
 
-					maximum: Math.max.apply(null, points) + (Math.max.apply(null, points)*0.05),
-					interval: 15/10,
+					maximum: Math.max.apply(null, points) + (Math.max.apply(null, points)*0.01),
+					interval: (Math.max.apply(null, points) + (Math.max.apply(null, points)*0.01))/10,
 					interlacedColor: "#F5F5F5",
 					gridColor: "#D7D7D7",
 					tickColor: "#D7D7D7"
