@@ -1,0 +1,45 @@
+html,body{font-family:Tahoma,Verdana,sans-serif;font-size:13px;line-height:1.5}
+img{width:100%;height:auto}
+h1{margin: 0;padding: 0;}
+#loginsignuparea{display:inline-block}
+#loginsignuparea button{margin-right:3px;min-width:88px;min-height:27px;border:none;color:white;cursor:pointer;font-weight:bold;font-size:0.81em}
+#loginsignuparea button a{color:#fff}
+#loginsignuparea button a:hover{text-decoration:none}
+.navyblue{background-color:#1C82B2}
+.darkgrey{background-color:#6a6a6a}
+.jumbotron{margin:0;padding:0;color:#000!important;text-align:center;background-color:#fff!important}
+#logo{margin-top:2px}
+#logo img{max-width:217px}
+.form-dropdown{width:150px;padding:5px;font-weight:bold;line-height:1;border:1px solid #000;height:34px;background:url(../images/comboBoxArrow.png) no-repeat right #fff;-webkit-appearance:none;background-position-x:130px;color:#1c82b1}
+#navmenubg{background-color:#1c82b1;margin-top:12px;min-height:40px;position:relative}
+#navmenubg ul{margin:0 auto;list-style:none;bottom:0;left:0;right:0;border:0;line-height:16px;min-height:40px;padding:6px 0 0}
+#navmenubg ul li{display:inline-block;min-height:34px;font-size:0.81em;font-weight:bold}
+#navmenubg ul li a{padding:8px 14px;display:block;text-decoration:none;font-size:1em;font-weight:bold;color:#fff;min-height:34px}
+#navmenubg ul li a:hover{color:#1c82b1;background-color:#dcefff}
+.active{background-color:#dcefff;color:#1c82b1;padding:8px 14px}
+.row{margin:0;padding:0 8px 16px;background-color:#dcefff}
+.deal{background-color:#fff;margin-top:13px;padding:8px;overflow:hidden}
+.dealtext{width:59.18%;float:left}
+.dealtitle h1{margin-top:11px;padding:0;font-size:1.15em}
+.dealtitle a{text-decoration:none;color:#000}
+.dealtitle a:hover{text-decoration:underline}
+.dealtimerandbtn{width:40.82%;float:left}
+.dealprice p{font-size:1.15em}
+.line-through{text-decoration:line-through}
+.redprice{color:#e00000;font-weight:bold}
+.remainingtime h1{margin-top:11px;padding:0;font-size:0.84em;font-weight:bold;text-align:center;padding-left:13px;margin-bottom:5px}
+.remainingtime p{font-size:0.87em;text-align:center;padding-left:13px}
+.viewdealbtn{margin-left:13px;max-width:101px;max-height:26px}
+.viewdealbtn{margin:8px auto 0}
+.viewdealbtn a{display:block;margin-left:13px}
+footer{background-color:#1c82b1;color:#fff;text-align:center}
+#footerheading h1{padding:12px 0 0;font-size: 1.01em;font-weight:bold}
+#countries{padding-top:13px}
+.country{float:left;width:50%}
+.countryname{font-size: 1.01em;font-weight:bold}
+.countryphone{font-size:1.5em}
+#footerlinks{clear:both}
+#footerlinks a{color:#fff;font-size:0.8em;text-decoration:none}
+#footerlinks a:hover{text-decoration:underline}
+.linkseparator{color:#145b7c;padding:0 3px}
+#footercopyright{font-size:0.9em;padding:13px 0 15px;color:#a8c7da}
