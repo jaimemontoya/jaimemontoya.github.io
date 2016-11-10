@@ -10,7 +10,7 @@ h1{margin: 0;padding: 0;}
 .jumbotron{margin:0;padding:0;color:#000!important;text-align:center;background-color:#fff!important}
 #logo{margin-top:2px}
 #logo img{max-width:217px}
-.form-dropdown{width:150px;padding:5px;font-weight:bold;line-height:1;border:1px solid #000;height:34px;background:url('../img/mobile/comboBoxArrow.png') no-repeat right #fff;-webkit-appearance:none;background-position-x:130px;color:#1c82b1}
+.form-dropdown{width:150px;padding:5px;font-weight:bold;line-height:1;border:1px solid #000;height:34px;background:url('images/mobile/comboBoxArrow.png') no-repeat right #fff;-webkit-appearance:none;background-position-x:130px;color:#1c82b1}
 #navmenubg{background-color:#1c82b1;margin-top:12px;min-height:40px;position:relative}
 #navmenubg ul{margin:0 auto;list-style:none;bottom:0;left:0;right:0;border:0;line-height:16px;min-height:40px;padding:6px 0 0}
 #navmenubg ul li{display:inline-block;min-height:34px;font-size:0.81em;font-weight:bold}
