@@ -1,539 +1,111 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-	<script>
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  		ga('create', 'UA-83600169-1', 'auto');
-  		ga('send', 'pageview');
-
-	</script>
-	<script type="text/javascript">
-		window.onload = function () {
-			var points = [0.00, 2.32, 5.97, 7.15, 8.75, 7.96, 5.87, 2.38, 0.00, 8.74, 12.84, 4.09, 5.98, 12.93, 5.16, 6.10, 6.43, 13.08, 8.12, 7.47, 5.37, 0.00, 0.58, 0.43, 2.74, 2.66, 3.30, 3.37, 3.83, 0.00, 9.65, 5.68, 2.51, 7.23, 9.00, 0.00, 0.00, 5.23, 5.44, 5.83, 9.80, 6.82, 0.00, 0.00, 5.99, 1.64, 5.95, 3.72, 2.10, 2.40, 3.15, 6.27, 0.22, 0.00, 10.25, 14.11, 0.00, 0.00, 0.00, 0.00, 0.00, 1.3, 4.83, 8.49, 10.01, 1.25, 0.00, 0.64, 2.41, 1.69, 0.00, 0.00, 0.00, 2.28, 0.00, 1.00, 1.00, 0.00, 3.14, 3.94, 2.45, 0.00, 4.63, 0.00, 0.41, 0.00, 0.00, 0.00, 0.00, 4.81, 0.00, 0.00, 0.00, 7.40, 9.05, 9.93, 8.70, 8.43, 4.31, 0.00, 7.87, 8.77, 8.92, 9.17, 7.77, 0.46, 7.67, 11.41, 9.54, 9.12, 7.36, 9.42, 5.28, 8.78, 8.65, 10.99, 8.68, 13.56, 10.44, 1.83, 10.40, 11.66, 10.38, 12.60, 12.41, 10.69, 0.00, 10.04, 10.52, 10.45, 10.07, 10.33, 13.14, 9.97, 12.37, 10.47, 11.03, 11.27, 11.06, 11.06, 4.89, 11.18, 10.58, 10.42, 11.25, 10.31];
-			var sum = 0, avg = 0;
-			for( var i = 0; i < points.length; i++ ){
-    				sum = sum + points[i];
-			}
-			var average = sum/points.length;
-			var chart = new CanvasJS.Chart("chartContainer4", {
-				zoomEnabled: false,
-				animationEnabled: true,
-				title: {
-					text: "Work history"
-				},
-				axisY2: {
-					valueFormatString: "0.0 h",
-
-					maximum: Math.max.apply(null, points) + (Math.max.apply(null, points)*0.1),
-					interval: Math.max.apply(null, points)/12,
-					interlacedColor: "#F5F5F5",
-					gridColor: "#D7D7D7",
-					tickColor: "#D7D7D7"
-				},
-				theme: "theme2",
-				toolTip: {
-					shared: true
-				},
-				legend: {
-					verticalAlign: "bottom",
-					horizontalAlign: "center",
-					fontSize: 15,
-					fontFamily: "Lucida Sans Unicode"
-				},
-				data: [{
-					type: "line",
-					lineThickness: 3,
-					axisYType: "secondary",
-					showInLegend: true,
-					name: "Hours",
-					dataPoints: [
-					 { x: new Date(2016, 6, 16), y: points[0] },
-					 { x: new Date(2016, 6, 17), y: points[1] },
-					 { x: new Date(2016, 6, 18), y: points[2] },
-					 { x: new Date(2016, 6, 19), y: points[3] },
-					 { x: new Date(2016, 6, 20), y: points[4] },
-					 { x: new Date(2016, 6, 21), y: points[5] },
-					 { x: new Date(2016, 6, 22), y: points[6] },
-					 { x: new Date(2016, 6, 23), y: points[7] },
-					 { x: new Date(2016, 6, 24), y: points[8] },
-					 { x: new Date(2016, 6, 25), y: points[9] },
-					 { x: new Date(2016, 6, 26), y: points[10] },
-					 { x: new Date(2016, 6, 27), y: points[11] },
-					 { x: new Date(2016, 6, 28), y: points[12] },
-					 { x: new Date(2016, 6, 29), y: points[13] },
-					 { x: new Date(2016, 6, 30), y: points[14] },
-					 { x: new Date(2016, 6, 31), y: points[15] },
-					 { x: new Date(2016, 7, 1), y: points[16] },
-					 { x: new Date(2016, 7, 2), y: points[17] },
-					 { x: new Date(2016, 7, 3), y: points[18] },
-					 { x: new Date(2016, 7, 4), y: points[19] },
-					 { x: new Date(2016, 7, 5), y: points[20] },
-					 { x: new Date(2016, 7, 6), y: points[21] },
-					 { x: new Date(2016, 7, 7), y: points[22] },
-					 { x: new Date(2016, 7, 8), y: points[23] },
-					 { x: new Date(2016, 7, 9), y: points[24] },
-					 { x: new Date(2016, 7, 10), y: points[25] },
-					 { x: new Date(2016, 7, 11), y: points[26] },
-					 { x: new Date(2016, 7, 12), y: points[27] },
-					 { x: new Date(2016, 7, 13), y: points[28] },
-					 { x: new Date(2016, 7, 14), y: points[29] },
-					 { x: new Date(2016, 7, 15), y: points[30] },
-					 { x: new Date(2016, 7, 16), y: points[31] },
-					 { x: new Date(2016, 7, 17), y: points[32] },
-					 { x: new Date(2016, 7, 18), y: points[33] },
-					 { x: new Date(2016, 7, 19), y: points[34] },
-					 { x: new Date(2016, 7, 20), y: points[35] },
-					 { x: new Date(2016, 7, 21), y: points[36] },
-					 { x: new Date(2016, 7, 22), y: points[37] },
-					 { x: new Date(2016, 7, 23), y: points[38] },
-					 { x: new Date(2016, 7, 24), y: points[39] },
-					 { x: new Date(2016, 7, 25), y: points[40] },
-					 { x: new Date(2016, 7, 26), y: points[41] },
-					 { x: new Date(2016, 7, 27), y: points[42] },
-					 { x: new Date(2016, 7, 28), y: points[43] },
-					 { x: new Date(2016, 7, 29), y: points[44] },
-					 { x: new Date(2016, 7, 30), y: points[45] },
-					 { x: new Date(2016, 7, 31), y: points[46] },
-					 { x: new Date(2016, 8, 1), y: points[47] },
-					 { x: new Date(2016, 8, 2), y: points[48] },
-					 { x: new Date(2016, 8, 3), y: points[49] },
-					 { x: new Date(2016, 8, 4), y: points[50] },
-					 { x: new Date(2016, 8, 5), y: points[51] },
-					 { x: new Date(2016, 8, 6), y: points[52] },
-					 { x: new Date(2016, 8, 7), y: points[53] },
-					 { x: new Date(2016, 8, 8), y: points[54] },
-					 { x: new Date(2016, 8, 9), y: points[55] },
-					 { x: new Date(2016, 8, 10), y: points[56] },
-					 { x: new Date(2016, 8, 11), y: points[57] },
-					 { x: new Date(2016, 8, 12), y: points[58] },
-					 { x: new Date(2016, 8, 13), y: points[59] },
-					 { x: new Date(2016, 8, 14), y: points[60] },
-					 { x: new Date(2016, 8, 15), y: points[61] },
-					 { x: new Date(2016, 8, 16), y: points[62] },
-					 { x: new Date(2016, 8, 17), y: points[63] },
-					 { x: new Date(2016, 8, 18), y: points[64] },
-					 { x: new Date(2016, 8, 19), y: points[65] },
-					 { x: new Date(2016, 8, 20), y: points[66] },
-					 { x: new Date(2016, 8, 21), y: points[67] },
-					 { x: new Date(2016, 8, 22), y: points[68] },
-					 { x: new Date(2016, 8, 23), y: points[69] },
- 					 { x: new Date(2016, 8, 24), y: points[70] },
-					 { x: new Date(2016, 8, 25), y: points[71] },
-					 { x: new Date(2016, 8, 26), y: points[72] },
-					 { x: new Date(2016, 8, 27), y: points[73] },
-					 { x: new Date(2016, 8, 28), y: points[74] },	
-					 { x: new Date(2016, 8, 29), y: points[75] },
-					 { x: new Date(2016, 8, 30), y: points[76] },
-					 { x: new Date(2016, 9, 01), y: points[77] },
-					 { x: new Date(2016, 9, 02), y: points[78] },
-					 { x: new Date(2016, 9, 03), y: points[79] },
-					 { x: new Date(2016, 9, 04), y: points[80] },
-					 { x: new Date(2016, 9, 05), y: points[81] },
-					 { x: new Date(2016, 9, 06), y: points[82] },
-					 { x: new Date(2016, 9, 07), y: points[83] },
-					 { x: new Date(2016, 9, 08), y: points[84] },
-					 { x: new Date(2016, 9, 09), y: points[85] },
-					 { x: new Date(2016, 9, 10), y: points[86] },
-					 { x: new Date(2016, 9, 11), y: points[87] },
-					 { x: new Date(2016, 9, 12), y: points[88] },
-					 { x: new Date(2016, 9, 13), y: points[89] },
-					 { x: new Date(2016, 9, 14), y: points[90] },
-					 { x: new Date(2016, 9, 15), y: points[91] },
-					 { x: new Date(2016, 9, 16), y: points[92] },
-					 { x: new Date(2016, 9, 17), y: points[93] },
-					 { x: new Date(2016, 9, 18), y: points[94] },
-					 { x: new Date(2016, 9, 19), y: points[95] },
-					 { x: new Date(2016, 9, 20), y: points[96] },
-					 { x: new Date(2016, 9, 21), y: points[97] },
-					 { x: new Date(2016, 9, 22), y: points[98] },
-					 { x: new Date(2016, 9, 23), y: points[99] },
-					 { x: new Date(2016, 9, 24), y: points[100] },
-					 { x: new Date(2016, 9, 25), y: points[101] },
-					 { x: new Date(2016, 9, 26), y: points[102] },
-					 { x: new Date(2016, 9, 27), y: points[103] },
-					 { x: new Date(2016, 9, 28), y: points[104] },
-					 { x: new Date(2016, 9, 29), y: points[105] },
-					 { x: new Date(2016, 9, 30), y: points[106] },
-					 { x: new Date(2016, 9, 31), y: points[107] },
-					 { x: new Date(2016, 10, 01), y: points[108] },
-					 { x: new Date(2016, 10, 02), y: points[109] },
-					 { x: new Date(2016, 10, 03), y: points[110] },
-					 { x: new Date(2016, 10, 04), y: points[111] },
-					 { x: new Date(2016, 10, 05), y: points[112] },
-					 { x: new Date(2016, 10, 06), y: points[113] },
-					 { x: new Date(2016, 10, 07), y: points[114] },
-					 { x: new Date(2016, 10, 08), y: points[115] },
-					 { x: new Date(2016, 10, 09), y: points[116] },
-					 { x: new Date(2016, 10, 10), y: points[117] },
-					 { x: new Date(2016, 10, 11), y: points[118] },
-					 { x: new Date(2016, 10, 12), y: points[119] },
-					 { x: new Date(2016, 10, 13), y: points[120] },
-					 { x: new Date(2016, 10, 14), y: points[121] },
-					 { x: new Date(2016, 10, 15), y: points[122] },
-					 { x: new Date(2016, 10, 16), y: points[123] },
-				         { x: new Date(2016, 10, 17), y: points[124] },
-			                 { x: new Date(2016, 10, 18), y: points[125] },
-					 { x: new Date(2016, 10, 19), y: points[126] },
-					 { x: new Date(2016, 10, 20), y: points[127] },
-					 { x: new Date(2016, 10, 21), y: points[128] },
-					 { x: new Date(2016, 10, 22), y: points[129] },
-					 { x: new Date(2016, 10, 23), y: points[130] },
-					 { x: new Date(2016, 10, 24), y: points[131] },
-					 { x: new Date(2016, 10, 25), y: points[132] },
-					 { x: new Date(2016, 10, 26), y: points[133] },
-					 { x: new Date(2016, 10, 27), y: points[134] },
-					 { x: new Date(2016, 10, 28), y: points[135] },
-					 { x: new Date(2016, 10, 29), y: points[136] },
-					 { x: new Date(2016, 10, 30), y: points[137] },
-					 { x: new Date(2016, 11, 01), y: points[138] },
-					 { x: new Date(2016, 11, 02), y: points[139] },
-					 { x: new Date(2016, 11, 03), y: points[140] },
-					 { x: new Date(2016, 11, 04), y: points[141] },
-					 { x: new Date(2016, 11, 05), y: points[142] },
-					 { x: new Date(2016, 11, 06), y: points[143] },
-					 { x: new Date(2016, 11, 07), y: points[144] },
-					 { x: new Date(2016, 11, 08), y: points[145] }
-					]
-				},
-				{
-					type: "line",
-					lineThickness: 3,
-					showInLegend: true,
-					name: "Average trend",
-					axisYType: "secondary",
-					dataPoints: [
-					 { x: new Date(2016, 6, 16), y: points[0] },
-					 { x: new Date(2016, 6, 17), y: (points.slice(0,2).reduce(function add(a,b){return a+b;},0))/2 },
-					 { x: new Date(2016, 6, 18), y: (points.slice(0,3).reduce(function add(a,b){return a+b;},0))/3 },
-					 { x: new Date(2016, 6, 19), y: (points.slice(0,4).reduce(function add(a,b){return a+b;},0))/4 },
-					 { x: new Date(2016, 6, 20), y: (points.slice(0,5).reduce(function add(a,b){return a+b;},0))/5 },
-					 { x: new Date(2016, 6, 21), y: (points.slice(0,6).reduce(function add(a,b){return a+b;},0))/6 },
-					 { x: new Date(2016, 6, 22), y: (points.slice(0,7).reduce(function add(a,b){return a+b;},0))/7 },
-					 { x: new Date(2016, 6, 23), y: (points.slice(0,8).reduce(function add(a,b){return a+b;},0))/8 },
-					 { x: new Date(2016, 6, 24), y: (points.slice(0,9).reduce(function add(a,b){return a+b;},0))/9 },
-					 { x: new Date(2016, 6, 25), y: (points.slice(0,10).reduce(function add(a,b){return a+b;},0))/10 },
-					 { x: new Date(2016, 6, 26), y: (points.slice(0,11).reduce(function add(a,b){return a+b;},0))/11 },
-					 { x: new Date(2016, 6, 27), y: (points.slice(0,12).reduce(function add(a,b){return a+b;},0))/12 },
-					 { x: new Date(2016, 6, 28), y: (points.slice(0,13).reduce(function add(a,b){return a+b;},0))/13 },
-					 { x: new Date(2016, 6, 29), y: (points.slice(0,14).reduce(function add(a,b){return a+b;},0))/14 },
-					 { x: new Date(2016, 6, 30), y: (points.slice(0,15).reduce(function add(a,b){return a+b;},0))/15 },
-					 { x: new Date(2016, 6, 31), y: (points.slice(0,16).reduce(function add(a,b){return a+b;},0))/16 },
-					 { x: new Date(2016, 7, 1), y: (points.slice(0,17).reduce(function add(a,b){return a+b;},0))/17 },
-					 { x: new Date(2016, 7, 2), y: (points.slice(0,18).reduce(function add(a,b){return a+b;},0))/18 },
-					 { x: new Date(2016, 7, 3), y: (points.slice(0,19).reduce(function add(a,b){return a+b;},0))/19 },
-					 { x: new Date(2016, 7, 4), y: (points.slice(0,20).reduce(function add(a,b){return a+b;},0))/20 },
-					 { x: new Date(2016, 7, 5), y: (points.slice(0,21).reduce(function add(a,b){return a+b;},0))/21 },
-					 { x: new Date(2016, 7, 6), y: (points.slice(0,22).reduce(function add(a,b){return a+b;},0))/22 },
-					 { x: new Date(2016, 7, 7), y: (points.slice(0,23).reduce(function add(a,b){return a+b;},0))/23 },
-					 { x: new Date(2016, 7, 8), y: (points.slice(0,24).reduce(function add(a,b){return a+b;},0))/24 },
-					 { x: new Date(2016, 7, 9), y: (points.slice(0,25).reduce(function add(a,b){return a+b;},0))/25 },
-					 { x: new Date(2016, 7, 10), y: (points.slice(0,26).reduce(function add(a,b){return a+b;},0))/26 },
-					 { x: new Date(2016, 7, 11), y: (points.slice(0,27).reduce(function add(a,b){return a+b;},0))/27 },
-					 { x: new Date(2016, 7, 12), y: (points.slice(0,28).reduce(function add(a,b){return a+b;},0))/28 },
-					 { x: new Date(2016, 7, 13), y: (points.slice(0,29).reduce(function add(a,b){return a+b;},0))/29 },
-					 { x: new Date(2016, 7, 14), y: (points.slice(0,30).reduce(function add(a,b){return a+b;},0))/30 },
-					 { x: new Date(2016, 7, 15), y: (points.slice(0,31).reduce(function add(a,b){return a+b;},0))/31 },
-					 { x: new Date(2016, 7, 16), y: (points.slice(0,32).reduce(function add(a,b){return a+b;},0))/32 },
-					 { x: new Date(2016, 7, 17), y: (points.slice(0,33).reduce(function add(a,b){return a+b;},0))/33 },
-					 { x: new Date(2016, 7, 18), y: (points.slice(0,34).reduce(function add(a,b){return a+b;},0))/34 },
-					 { x: new Date(2016, 7, 19), y: (points.slice(0,35).reduce(function add(a,b){return a+b;},0))/35 },
-					 { x: new Date(2016, 7, 20), y: (points.slice(0,36).reduce(function add(a,b){return a+b;},0))/36 },
-					 { x: new Date(2016, 7, 21), y: (points.slice(0,37).reduce(function add(a,b){return a+b;},0))/37 },
-					 { x: new Date(2016, 7, 22), y: (points.slice(0,38).reduce(function add(a,b){return a+b;},0))/38 },
-					 { x: new Date(2016, 7, 23), y: (points.slice(0,39).reduce(function add(a,b){return a+b;},0))/39 },
-					 { x: new Date(2016, 7, 24), y: (points.slice(0,40).reduce(function add(a,b){return a+b;},0))/40 },
-					 { x: new Date(2016, 7, 25), y: (points.slice(0,41).reduce(function add(a,b){return a+b;},0))/41 },
-					 { x: new Date(2016, 7, 26), y: (points.slice(0,42).reduce(function add(a,b){return a+b;},0))/42 },
-					 { x: new Date(2016, 7, 27), y: (points.slice(0,43).reduce(function add(a,b){return a+b;},0))/43 },
-					 { x: new Date(2016, 7, 28), y: (points.slice(0,44).reduce(function add(a,b){return a+b;},0))/44 },
-					 { x: new Date(2016, 7, 29), y: (points.slice(0,45).reduce(function add(a,b){return a+b;},0))/45 },
-				 	 { x: new Date(2016, 7, 30), y: (points.slice(0,46).reduce(function add(a,b){return a+b;},0))/46 },
-				 	 { x: new Date(2016, 7, 31), y: (points.slice(0,47).reduce(function add(a,b){return a+b;},0))/47 },
-				 	 { x: new Date(2016, 8, 1), y: (points.slice(0,48).reduce(function add(a,b){return a+b;},0))/48 },
-				 	 { x: new Date(2016, 8, 2), y: (points.slice(0,49).reduce(function add(a,b){return a+b;},0))/49 },
-				 	 { x: new Date(2016, 8, 3), y: (points.slice(0,50).reduce(function add(a,b){return a+b;},0))/50 },
-				 	 { x: new Date(2016, 8, 4), y: (points.slice(0,51).reduce(function add(a,b){return a+b;},0))/51 },
-				 	 { x: new Date(2016, 8, 5), y: (points.slice(0,52).reduce(function add(a,b){return a+b;},0))/52 },
-				 	 { x: new Date(2016, 8, 6), y: (points.slice(0,53).reduce(function add(a,b){return a+b;},0))/53 },
-				 	 { x: new Date(2016, 8, 7), y: (points.slice(0,54).reduce(function add(a,b){return a+b;},0))/54 },
-				 	 { x: new Date(2016, 8, 8), y: (points.slice(0,55).reduce(function add(a,b){return a+b;},0))/55 },
-				 	 { x: new Date(2016, 8, 9), y: (points.slice(0,56).reduce(function add(a,b){return a+b;},0))/56 },
-				 	 { x: new Date(2016, 8, 10), y: (points.slice(0,57).reduce(function add(a,b){return a+b;},0))/57 },
-				 	 { x: new Date(2016, 8, 11), y: (points.slice(0,58).reduce(function add(a,b){return a+b;},0))/58 },
-				 	 { x: new Date(2016, 8, 12), y: (points.slice(0,59).reduce(function add(a,b){return a+b;},0))/59 },
-				 	 { x: new Date(2016, 8, 13), y: (points.slice(0,60).reduce(function add(a,b){return a+b;},0))/60 },
-				 	 { x: new Date(2016, 8, 14), y: (points.slice(0,61).reduce(function add(a,b){return a+b;},0))/61 },
-				 	 { x: new Date(2016, 8, 15), y: (points.slice(0,62).reduce(function add(a,b){return a+b;},0))/62 },
-				 	 { x: new Date(2016, 8, 16), y: (points.slice(0,63).reduce(function add(a,b){return a+b;},0))/63 },
-				 	 { x: new Date(2016, 8, 17), y: (points.slice(0,64).reduce(function add(a,b){return a+b;},0))/64 },
-				 	 { x: new Date(2016, 8, 18), y: (points.slice(0,65).reduce(function add(a,b){return a+b;},0))/65 },
-				 	 { x: new Date(2016, 8, 19), y: (points.slice(0,66).reduce(function add(a,b){return a+b;},0))/66 },
-				 	 { x: new Date(2016, 8, 20), y: (points.slice(0,67).reduce(function add(a,b){return a+b;},0))/67 },
-				 	 { x: new Date(2016, 8, 21), y: (points.slice(0,68).reduce(function add(a,b){return a+b;},0))/68 },
-				 	 { x: new Date(2016, 8, 22), y: (points.slice(0,69).reduce(function add(a,b){return a+b;},0))/69 },
-				 	 { x: new Date(2016, 8, 23), y: (points.slice(0,70).reduce(function add(a,b){return a+b;},0))/70 },
-					 { x: new Date(2016, 8, 24), y: (points.slice(0,71).reduce(function add(a,b){return a+b;},0))/71 },
-					 { x: new Date(2016, 8, 25), y: (points.slice(0,72).reduce(function add(a,b){return a+b;},0))/72 },
-					 { x: new Date(2016, 8, 26), y: (points.slice(0,73).reduce(function add(a,b){return a+b;},0))/73 },
-				         { x: new Date(2016, 8, 27), y: (points.slice(0,74).reduce(function add(a,b){return a+b;},0))/74 },
-					 { x: new Date(2016, 8, 28), y: (points.slice(0,75).reduce(function add(a,b){return a+b;},0))/75 },
-					 { x: new Date(2016, 8, 29), y: (points.slice(0,76).reduce(function add(a,b){return a+b;},0))/76 },
-					 { x: new Date(2016, 8, 30), y: (points.slice(0,77).reduce(function add(a,b){return a+b;},0))/77 },
-					 { x: new Date(2016, 9, 01), y: (points.slice(0,78).reduce(function add(a,b){return a+b;},0))/78 },
-					 { x: new Date(2016, 9, 02), y: (points.slice(0,79).reduce(function add(a,b){return a+b;},0))/79 },
-					 { x: new Date(2016, 9, 03), y: (points.slice(0,80).reduce(function add(a,b){return a+b;},0))/80 },
-					 { x: new Date(2016, 9, 04), y: (points.slice(0,81).reduce(function add(a,b){return a+b;},0))/81 },
-					 { x: new Date(2016, 9, 05), y: (points.slice(0,82).reduce(function add(a,b){return a+b;},0))/82 },
-					 { x: new Date(2016, 9, 06), y: (points.slice(0,83).reduce(function add(a,b){return a+b;},0))/83 },
-					 { x: new Date(2016, 9, 07), y: (points.slice(0,84).reduce(function add(a,b){return a+b;},0))/84 },
-					 { x: new Date(2016, 9, 08), y: (points.slice(0,85).reduce(function add(a,b){return a+b;},0))/85 },
-					 { x: new Date(2016, 9, 09), y: (points.slice(0,86).reduce(function add(a,b){return a+b;},0))/86 },
-					 { x: new Date(2016, 9, 10), y: (points.slice(0,87).reduce(function add(a,b){return a+b;},0))/87 },
-					 { x: new Date(2016, 9, 11), y: (points.slice(0,88).reduce(function add(a,b){return a+b;},0))/88 },
-					 { x: new Date(2016, 9, 12), y: (points.slice(0,89).reduce(function add(a,b){return a+b;},0))/89 },
-					 { x: new Date(2016, 9, 13), y: (points.slice(0,90).reduce(function add(a,b){return a+b;},0))/90 },
-					 { x: new Date(2016, 9, 14), y: (points.slice(0,91).reduce(function add(a,b){return a+b;},0))/91 },
-					 { x: new Date(2016, 9, 15), y: (points.slice(0,92).reduce(function add(a,b){return a+b;},0))/92 },
-					 { x: new Date(2016, 9, 16), y: (points.slice(0,93).reduce(function add(a,b){return a+b;},0))/93 },
-					 { x: new Date(2016, 9, 17), y: (points.slice(0,94).reduce(function add(a,b){return a+b;},0))/94 },
-					 { x: new Date(2016, 9, 18), y: (points.slice(0,95).reduce(function add(a,b){return a+b;},0))/95 },
-					 { x: new Date(2016, 9, 19), y: (points.slice(0,96).reduce(function add(a,b){return a+b;},0))/96 },
-					 { x: new Date(2016, 9, 20), y: (points.slice(0,97).reduce(function add(a,b){return a+b;},0))/97 },
-					 { x: new Date(2016, 9, 21), y: (points.slice(0,98).reduce(function add(a,b){return a+b;},0))/98 },
-					 { x: new Date(2016, 9, 22), y: (points.slice(0,99).reduce(function add(a,b){return a+b;},0))/99 },
-					 { x: new Date(2016, 9, 23), y: (points.slice(0,100).reduce(function add(a,b){return a+b;},0))/100 },
-					 { x: new Date(2016, 9, 24), y: (points.slice(0,101).reduce(function add(a,b){return a+b;},0))/101 },
-					 { x: new Date(2016, 9, 25), y: (points.slice(0,102).reduce(function add(a,b){return a+b;},0))/102 },
-					 { x: new Date(2016, 9, 26), y: (points.slice(0,103).reduce(function add(a,b){return a+b;},0))/103 },
-					 { x: new Date(2016, 9, 27), y: (points.slice(0,104).reduce(function add(a,b){return a+b;},0))/104 },
-					 { x: new Date(2016, 9, 28), y: (points.slice(0,105).reduce(function add(a,b){return a+b;},0))/105 },
-					 { x: new Date(2016, 9, 29), y: (points.slice(0,106).reduce(function add(a,b){return a+b;},0))/106 },
-					 { x: new Date(2016, 9, 30), y: (points.slice(0,107).reduce(function add(a,b){return a+b;},0))/107 },
-					 { x: new Date(2016, 9, 31), y: (points.slice(0,108).reduce(function add(a,b){return a+b;},0))/108 },
-					 { x: new Date(2016, 10, 01), y: (points.slice(0,109).reduce(function add(a,b){return a+b;},0))/109 },
-					 { x: new Date(2016, 10, 02), y: (points.slice(0,110).reduce(function add(a,b){return a+b;},0))/110 },
-					 { x: new Date(2016, 10, 03), y: (points.slice(0,111).reduce(function add(a,b){return a+b;},0))/111 },
-					 { x: new Date(2016, 10, 04), y: (points.slice(0,112).reduce(function add(a,b){return a+b;},0))/112 },
-					 { x: new Date(2016, 10, 05), y: (points.slice(0,113).reduce(function add(a,b){return a+b;},0))/113 },
-					 { x: new Date(2016, 10, 06), y: (points.slice(0,114).reduce(function add(a,b){return a+b;},0))/114 },
-					 { x: new Date(2016, 10, 07), y: (points.slice(0,115).reduce(function add(a,b){return a+b;},0))/115 },
-					 { x: new Date(2016, 10, 08), y: (points.slice(0,116).reduce(function add(a,b){return a+b;},0))/116 },
-					 { x: new Date(2016, 10, 09), y: (points.slice(0,117).reduce(function add(a,b){return a+b;},0))/117 },
-					 { x: new Date(2016, 10, 10), y: (points.slice(0,118).reduce(function add(a,b){return a+b;},0))/118 },
-					 { x: new Date(2016, 10, 11), y: (points.slice(0,119).reduce(function add(a,b){return a+b;},0))/119 },
-					 { x: new Date(2016, 10, 12), y: (points.slice(0,120).reduce(function add(a,b){return a+b;},0))/120 },
-					 { x: new Date(2016, 10, 13), y: (points.slice(0,121).reduce(function add(a,b){return a+b;},0))/121 },
-					 { x: new Date(2016, 10, 14), y: (points.slice(0,122).reduce(function add(a,b){return a+b;},0))/122 },
-					 { x: new Date(2016, 10, 15), y: (points.slice(0,123).reduce(function add(a,b){return a+b;},0))/123 },
-					 { x: new Date(2016, 10, 16), y: (points.slice(0,124).reduce(function add(a,b){return a+b;},0))/124 },
-				         { x: new Date(2016, 10, 17), y: (points.slice(0,125).reduce(function add(a,b){return a+b;},0))/125 },
-				         { x: new Date(2016, 10, 18), y: (points.slice(0,126).reduce(function add(a,b){return a+b;},0))/126 },
-					 { x: new Date(2016, 10, 19), y: (points.slice(0,127).reduce(function add(a,b){return a+b;},0))/127 },
-					 { x: new Date(2016, 10, 20), y: (points.slice(0,128).reduce(function add(a,b){return a+b;},0))/128 },
-					 { x: new Date(2016, 10, 21), y: (points.slice(0,129).reduce(function add(a,b){return a+b;},0))/129 },
-					 { x: new Date(2016, 10, 22), y: (points.slice(0,130).reduce(function add(a,b){return a+b;},0))/130 },
-					 { x: new Date(2016, 10, 23), y: (points.slice(0,131).reduce(function add(a,b){return a+b;},0))/131 },
-					 { x: new Date(2016, 10, 24), y: (points.slice(0,132).reduce(function add(a,b){return a+b;},0))/132 },
-					 { x: new Date(2016, 10, 25), y: (points.slice(0,133).reduce(function add(a,b){return a+b;},0))/133 },
-					 { x: new Date(2016, 10, 26), y: (points.slice(0,134).reduce(function add(a,b){return a+b;},0))/134 },
-					 { x: new Date(2016, 10, 27), y: (points.slice(0,135).reduce(function add(a,b){return a+b;},0))/135 },
-					 { x: new Date(2016, 10, 28), y: (points.slice(0,136).reduce(function add(a,b){return a+b;},0))/136 },
-					 { x: new Date(2016, 10, 29), y: (points.slice(0,137).reduce(function add(a,b){return a+b;},0))/137 },
-				         { x: new Date(2016, 10, 30), y: (points.slice(0,138).reduce(function add(a,b){return a+b;},0))/138 },
-					 { x: new Date(2016, 11, 01), y: (points.slice(0,139).reduce(function add(a,b){return a+b;},0))/139 },
-					 { x: new Date(2016, 11, 02), y: (points.slice(0,140).reduce(function add(a,b){return a+b;},0))/140 },
-					 { x: new Date(2016, 11, 03), y: (points.slice(0,141).reduce(function add(a,b){return a+b;},0))/141 },
-					 { x: new Date(2016, 11, 04), y: (points.slice(0,142).reduce(function add(a,b){return a+b;},0))/142 },
-					 { x: new Date(2016, 11, 05), y: (points.slice(0,143).reduce(function add(a,b){return a+b;},0))/143 },
-					 { x: new Date(2016, 11, 06), y: (points.slice(0,144).reduce(function add(a,b){return a+b;},0))/144 },
-					 { x: new Date(2016, 11, 07), y: (points.slice(0,145).reduce(function add(a,b){return a+b;},0))/145 },
-					 { x: new Date(2016, 11, 08), y: (points.slice(0,146).reduce(function add(a,b){return a+b;},0))/146 }
-					]
-				},
-				{
-					type: "line",
-					lineThickness: 3,
-					showInLegend: true,
-					name: "Global average",
-					axisYType: "secondary",
-					dataPoints: [
-					 { x: new Date(2016, 6, 16), y: average },
-					 { x: new Date(2016, 6, 17), y: average },
-					 { x: new Date(2016, 6, 18), y: average },
-					 { x: new Date(2016, 6, 19), y: average },
-					 { x: new Date(2016, 6, 20), y: average },
-					 { x: new Date(2016, 6, 21), y: average },
-					 { x: new Date(2016, 6, 22), y: average },
-					 { x: new Date(2016, 6, 23), y: average },
-					 { x: new Date(2016, 6, 24), y: average },
-					 { x: new Date(2016, 6, 25), y: average },
-					 { x: new Date(2016, 6, 26), y: average },
-					 { x: new Date(2016, 6, 27), y: average },
-					 { x: new Date(2016, 6, 28), y: average },
-					 { x: new Date(2016, 6, 29), y: average },
-					 { x: new Date(2016, 6, 30), y: average },
-					 { x: new Date(2016, 6, 31), y: average },
-					 { x: new Date(2016, 7, 1), y: average },
-					 { x: new Date(2016, 7, 2), y: average },
-					 { x: new Date(2016, 7, 3), y: average },
-					 { x: new Date(2016, 7, 4), y: average },
-					 { x: new Date(2016, 7, 5), y: average },
-					 { x: new Date(2016, 7, 6), y: average },
-					 { x: new Date(2016, 7, 7), y: average },
-					 { x: new Date(2016, 7, 8), y: average },
-					 { x: new Date(2016, 7, 9), y: average },
-					 { x: new Date(2016, 7, 10), y: average },
-					 { x: new Date(2016, 7, 11), y: average },
-					 { x: new Date(2016, 7, 12), y: average },
-					 { x: new Date(2016, 7, 13), y: average },
-					 { x: new Date(2016, 7, 14), y: average },
-					 { x: new Date(2016, 7, 15), y: average },
-					 { x: new Date(2016, 7, 16), y: average },
-					 { x: new Date(2016, 7, 17), y: average },
-					 { x: new Date(2016, 7, 18), y: average },
-					 { x: new Date(2016, 7, 19), y: average },
-					 { x: new Date(2016, 7, 20), y: average },
-					 { x: new Date(2016, 7, 21), y: average },
-					 { x: new Date(2016, 7, 22), y: average },
-					 { x: new Date(2016, 7, 23), y: average },
-					 { x: new Date(2016, 7, 24), y: average },
-					 { x: new Date(2016, 7, 25), y: average },
-					 { x: new Date(2016, 7, 26), y: average },
-					 { x: new Date(2016, 7, 27), y: average },
-					 { x: new Date(2016, 7, 28), y: average },					 
-					 { x: new Date(2016, 7, 29), y: average },
-					 { x: new Date(2016, 7, 30), y: average },
-					 { x: new Date(2016, 7, 31), y: average },
-					 { x: new Date(2016, 8, 1), y: average },
-					 { x: new Date(2016, 8, 2), y: average },
-					 { x: new Date(2016, 8, 3), y: average },					 
-        			         { x: new Date(2016, 8, 4), y: average },
-        			         { x: new Date(2016, 8, 5), y: average },
-        			         { x: new Date(2016, 8, 6), y: average },
-        			         { x: new Date(2016, 8, 7), y: average },
-        			         { x: new Date(2016, 8, 8), y: average },
-        			         { x: new Date(2016, 8, 9), y: average },
-        			         { x: new Date(2016, 8, 10), y: average },
-					 { x: new Date(2016, 8, 11), y: average },
-					 { x: new Date(2016, 8, 12), y: average },
-					 { x: new Date(2016, 8, 13), y: average },
-					 { x: new Date(2016, 8, 14), y: average },
-					 { x: new Date(2016, 8, 15), y: average },
-					 { x: new Date(2016, 8, 16), y: average },
-					 { x: new Date(2016, 8, 17), y: average },
-					 { x: new Date(2016, 8, 18), y: average },
-					 { x: new Date(2016, 8, 19), y: average },
-					 { x: new Date(2016, 8, 20), y: average },
-					 { x: new Date(2016, 8, 21), y: average },
-					 { x: new Date(2016, 8, 22), y: average },
-					 { x: new Date(2016, 8, 23), y: average },
-					 { x: new Date(2016, 8, 24), y: average },
-					 { x: new Date(2016, 8, 25), y: average },
-					 { x: new Date(2016, 8, 26), y: average },
-					 { x: new Date(2016, 8, 27), y: average },
-					 { x: new Date(2016, 8, 28), y: average },
-					 { x: new Date(2016, 8, 29), y: average },
-					 { x: new Date(2016, 8, 30), y: average },
-					 { x: new Date(2016, 9, 01), y: average },
-					 { x: new Date(2016, 9, 02), y: average },
-					 { x: new Date(2016, 9, 03), y: average },
-					 { x: new Date(2016, 9, 04), y: average },
-					 { x: new Date(2016, 9, 05), y: average },
-					 { x: new Date(2016, 9, 06), y: average },
-					 { x: new Date(2016, 9, 07), y: average },
-					 { x: new Date(2016, 9, 08), y: average },
-					 { x: new Date(2016, 9, 09), y: average },
-					 { x: new Date(2016, 9, 10), y: average },
-					 { x: new Date(2016, 9, 11), y: average },
-					 { x: new Date(2016, 9, 12), y: average },
-					 { x: new Date(2016, 9, 13), y: average },
-					 { x: new Date(2016, 9, 14), y: average },
-					 { x: new Date(2016, 9, 15), y: average },
-					 { x: new Date(2016, 9, 16), y: average },
-					 { x: new Date(2016, 9, 17), y: average },
-					 { x: new Date(2016, 9, 18), y: average },
-					 { x: new Date(2016, 9, 19), y: average },
-					 { x: new Date(2016, 9, 20), y: average },
-					 { x: new Date(2016, 9, 21), y: average },
-					 { x: new Date(2016, 9, 22), y: average },
-					 { x: new Date(2016, 9, 23), y: average },
-					 { x: new Date(2016, 9, 24), y: average },
-					 { x: new Date(2016, 9, 25), y: average },
-					 { x: new Date(2016, 9, 26), y: average },
-					 { x: new Date(2016, 9, 27), y: average },
-					 { x: new Date(2016, 9, 28), y: average },
-					 { x: new Date(2016, 9, 29), y: average },
-					 { x: new Date(2016, 9, 30), y: average },
-					 { x: new Date(2016, 9, 31), y: average },
-					 { x: new Date(2016, 10, 01), y: average },
-					 { x: new Date(2016, 10, 02), y: average },
-					 { x: new Date(2016, 10, 03), y: average },
-					 { x: new Date(2016, 10, 04), y: average },
-					 { x: new Date(2016, 10, 05), y: average },
-					 { x: new Date(2016, 10, 06), y: average },
-					 { x: new Date(2016, 10, 07), y: average },
-					 { x: new Date(2016, 10, 08), y: average },
-					 { x: new Date(2016, 10, 09), y: average },
-					 { x: new Date(2016, 10, 10), y: average },
-					 { x: new Date(2016, 10, 11), y: average },
-					 { x: new Date(2016, 10, 12), y: average },
-					 { x: new Date(2016, 10, 13), y: average },
-					 { x: new Date(2016, 10, 14), y: average },
-					 { x: new Date(2016, 10, 15), y: average },
-					 { x: new Date(2016, 10, 16), y: average },
-					 { x: new Date(2016, 10, 17), y: average },
-					 { x: new Date(2016, 10, 18), y: average },
-					 { x: new Date(2016, 10, 19), y: average },
-					 { x: new Date(2016, 10, 20), y: average },
-					 { x: new Date(2016, 10, 21), y: average },
-					 { x: new Date(2016, 10, 22), y: average },
-					 { x: new Date(2016, 10, 23), y: average },
-					 { x: new Date(2016, 10, 24), y: average },
-					 { x: new Date(2016, 10, 25), y: average },
-					 { x: new Date(2016, 10, 26), y: average },
-					 { x: new Date(2016, 10, 27), y: average },
-					 { x: new Date(2016, 10, 28), y: average },
-					 { x: new Date(2016, 10, 29), y: average },
-					 { x: new Date(2016, 10, 30), y: average },
-					 { x: new Date(2016, 11, 01), y: average },
-					 { x: new Date(2016, 11, 02), y: average },
-					 { x: new Date(2016, 11, 03), y: average },
-					 { x: new Date(2016, 11, 04), y: average },
-					 { x: new Date(2016, 11, 05), y: average },
-					 { x: new Date(2016, 11, 06), y: average },
-					 { x: new Date(2016, 11, 07), y: average },
-					 { x: new Date(2016, 11, 08), y: average }
-					]
-				}
-				],
-				legend: {
-					cursor: "pointer",
-					itemclick: function (e) {
-						if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-							e.dataSeries.visible = false;
-						}
-						else {
-							e.dataSeries.visible = true;
-						}
-						chart.render();
-					}
-				}
-			});
-			console.log(chart.options.data[0].dataPoints[3].x);
-			chart.render();
-		}
-	</script>
-	<script src="canvasjs.min.js"></script>
-	<title>Work history</title>
-</head>
-
-<body>
-
-	<div id="chartContainer4"></div>
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<title>title</title>
+	</head>
+	<body>
+		<div style="width:100%;position:relative">
+			<img src="headerimg.jpg" alt="Feliz Navidad" style="width:100%">
+			<div style="margin-left:52%"><p style="position:absolute;width:100%;top:12vw;font-size:1em;font-size:3.5vw;">peterippolito</p></div>
+			<div style="margin-left:52%"><p style="position:absolute;width:100%;top:21vw;font-size:1em;font-size:3.5vw;">Pete Amigo</p></div>
+		</div>
+		<div style="width: 100%; margin:0px auto;margin:0px;padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em;font-style:italic;padding:7px 0">
+			<span style="font-weight:bold">Mensaje: </span>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+		</div>
+		<div style="width: 100%; margin: auto;">
+			<div style="width: 100%; margin:0px auto;margin:0px;padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:12px;">
+				<div style="border:2px solid #000; padding:20px; background:#fff;">
+					<a href="http://www.cuponclub.net/" style="color: rgb(255, 255, 255);" title="Cupón Club" target="_blank"><img alt="[Image: Cupón Club]" src="https://ci3.googleusercontent.com/proxy/Z702kFVWQe06vwfQ33JffTKNkBek6ErLfHHRp_i7lBmJDElY5vSIEfwaZN3FR6aQYxquO79viNZ-8CnxeIBa4REzOJ4KJSr4BlI2nQ=s0-d-e1-ft#http://www.cuponclub.net/img/blue-theme/logo-black.png" style="width:100%;height:auto;max-width:240px;float:left"></a>
+					<strong style="margin:0px;padding:0px 0px 0px 10px;font-size:20px;color:#000;float:right">#0003a8c6-1<br>&nbsp;8727</strong>
+					<div style="border-bottom:2px solid #ddd;padding:0px 0px 10px 0px;clear:both"></div>
+					<p style="margin:0px;padding:0px;clear:both">
+						<!--<strong style="color:#000; font-size:20px;display:block;margin:15px 0px 0px 0px;padding:0px;">##DEAL_NAME##</strong>-->
+						<strong style="color:#000; font-size:20px;display:block;margin:15px 0px 0px 0px;padding:0px;">Menú de Sushi para 2</strong>
+					</p>
+					<div  style="margin:0px;padding:0px 10px;">
+						<table style="" style="background-color:#fff;border-bottom:2px solid #ddd;padding:0px;margin:0px;width: 100%;margin:0px;padding:0px; font-size:12px;">
+							<tbody>
+								<tr>
+									<td style="width: 49%;line-height:22px;vertical-align:top; margin:0px;padding:0px;">
+										<strong style="color:#000; font-size:16px;display:block;margin:5px 0px 0px 0px;padding:0px;display:block;"><!--Recipient:-->Beneficiario:</strong>
+										<!--<p style="margin:0px;padding:0px;font-size:13px;color:#000;">	##RECIPIENT_USER_NAME##</p>-->
+										<p style="margin:0px;padding:0px;font-size:13px;color:#000;">Pete Amigo</p>
+										<strong style="color:#000; font-size:16px;display:block;margin:6px 0px 0px 0px; padding:0px 0px 0px 0px;display:block;"><!--Expires:-->Expira:</strong>
+										<!--<p style="margin:0px;padding:0px;font-size:13px;color:#000;">##COUPON_EXPIRY_DATE##</p>-->
+										<p style="margin:0px;padding:0px;font-size:13px;color:#000;">05/02/2017 08:00 PM</p>						
+										<strong style="color:#000; font-size:16px;display:block;margin:6px 0px 0px 0px; padding:0px 0px 0px 0px;display:block;"><!--Expires:-->Canjear en:</strong>
+										<p>
+											Soho El Salvador<br />Centro Comercial Multiplaza, Las Terrazas<br />San Salvador<br />La Libertad<br />El Salvador<br />
+										</p>
+										<strong style="color:#000; font-size:16px;display:block;margin:6px 0px 0px 0px; padding:0px 0px 0px 0px;display:block;"><!--Fine Print:-->Condiciones:</strong>
+										<!--<p style="margin:0px;padding:0px;font-size:13px;color:#000;">##COUPON_CONDITION##</p>-->
+										<p style="margin:0px;padding:0px;font-size:13px;color:#000"></p>
+										<p style="text-align:justify"><strong>¡Te encantará! Un par de detalles: </strong>No combinable con otras ofertas o promociones. Máximo de 2 cupones por mesa. No válido el 25 de diciembre, 1 de enero ni 14 de febrero. La propina se pagará sobre el monto total de la cuenta. <strong>¡Qué disfrutes!</strong></p>
+										<strong style="color:#000; font-size:16px;display:block;margin:6px 0px 0px 0px; padding:0px 0px 0px 0px;display:block;">AVISO IMPORTANTE:</strong>
+										<p style="margin:0px;padding:0px;font-size:13px;color:#000;">Es necesario presentar identificación al momento de canjear el cupón. Si no nos compraste este cupón directamente en nuestro sitio web, en nuestros kioscos o a través de nuestro servicio de domicilios, puede ser un cupón falso.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table style="padding:0px; margin:10px 0px 0px 0px;">
+							<tr>
+								<td  width="100%"  style="margin:0px;padding:0px;">
+									<strong style="color:#000; font-size:16px; padding:0px 0px 0px 0px;color:#000;display:block;"><!--Universal Fine Print:-->Condiciones Universales:</strong>
+									<p style="margin:0px;padding:0px;font-size:12px;color:#000;">    <!--Not valid for cash back (unless required by law). Must use in one visit. Doesn't cover tax or gratuity. Can't be combined with other offers.-->No v&aacute;lido para devoluci&oacute;n de efectivo (a menos que sea requerido por la ley). Se debe usar en una visita. No incluye impuestos o propinas. No se puede combinar con otras ofertas.<br/></p>
+								</td>
+							</tr>
+							<tr>
+								<td  width="100%" style="margin:0px;padding:0px; text-aling:left;text-align:left;">
+									<!--<p style="color:#000;margin:0px;padding:0px;"> ##BARCODE##</p>-->
+									<p style="color:#000;margin:0px;padding:0px;text-align:center"> <img src="https://ci4.googleusercontent.com/proxy/_V2SwpSQCB4r35xxe99EmblI4Ve03ff5Ajtv2yYwfBE12VVLxZrG0dSOMaxL5sYVoSa2Q2QG1uaS3VDynIDO4mlO_VGZkXqwp55r6x85HGCoCRVlDRKsAWKawqACcWEYJA=s0-d-e1-ft#https://cuponclub.net/deals/barcode/446399/cb324fa656e7c16bb1ae8cc5f8cc6661" alt="[Image: barcode]" class="CToWUd a6T" tabindex="0" style="width:100%;max-width:300px;height:auto"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 678px; top: 1048px;"><div id=":16t" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Download" role="button" tabindex="0" aria-label="Download attachment " data-tooltip-class="a1V"><div class="aSK J-J5-Ji aYr"></div></div></div></p>
+									<p style="text-align:center"><b>99028727</b></p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<table style="margin:10px 0px 0px 0px;padding:10px;">
+					<tr>
+						<td width="100%" style="vertical-align:top;margin:0px;padding:0px;">
+						
+							<!--<p><img src='##GIFT_IMAGE##' style="vertical-align:middle;margin:0px 10px 0px 0px;" />--><!--A gift from--><!--Un regalo de <strong style="color:#000;">##USER_NAME##</strong></p>-->
+							<p><img src='https://ci6.googleusercontent.com/proxy/Jkr4zivwU7KFXIEjoWfE9t748nVqyLMkF1XiOpo0xZ7aDIGZDM41EWk_0NWNwqd04a10pAp3gjmMPPI=s0-d-e1-ft#http://www.cuponclub.net/img/gift.png' style="vertical-align:middle;margin:0px 10px 0px 0px;" /><!--A gift from-->Un regalo de <strong style="color:#000;">peterippolito</strong></p>
+							<!--<p style="padding:10px; background:#fff; color:#000;font-size:13px;">##MESSAGE##</p>-->
+							<p style="padding:10px; background:#fff; color:#000;font-size:13px;">This is the message. This is the message.</p>
+						
+							<strong style="color:#000; font-size:16px;padding:10px 0px 0px 0px; color:#000;margin:0px 0px 5px 0px;display:block;"><!--How to use this:-->C&oacute;mo usar esto:</strong>
+							<ol  style="font-family:arial;font-size:13px;color:#000;margin:10px 0px;padding:0px;list-style-type:decimal;list-style-position:inside;">
+								<!--<li>--><!--Print your--><!--Imprime tu ##SITE_NAME##</li>-->
+								<li><!--Print your-->Imprime tu Cupón Club</li>
+								<!--<li>--><!--Present--><!--Presenta ##SITE_NAME## --><!--upon arrival.--><!--cuando llegues.</li>-->
+								<li><!--Present-->Presenta Cupón Club <!--upon arrival.-->cuando llegues.</li>
+								<li><!--Enjoy!-->&iexcl;Disfruta!</li>
+							</ol>
+							<p style="font-family:arial;font-size:13px;color:#000;margin:0px;padding:0px;">
+								<!--*Remember:--><!--*Recuerda: los clientes ##SITE_NAME## --><!--customers tip on the full amount of the pre-discounted service (and tip generously). That's why we are the coolest customers out there.--><!--dan propina por la cantidad completa de los servicios con descuento (y lo hacen generosamente). Por esa raz&oacute;n somos los mejores clientes en todos lados.</p>-->
+								<!--*Remember:-->*Recuerda: los clientes Cupón Club <!--customers tip on the full amount of the pre-discounted service (and tip generously). That's why we are the coolest customers out there.-->dan propina por la cantidad completa de los servicios con descuento (y lo hacen generosamente). Por esa raz&oacute;n somos los mejores clientes en todos lados.
+							</p>
+							<strong style="color:#000; font-size:20px;padding:10px 0px 5px 0px;color:#000;font-size:16px; display:block;text-align:center"><!--Map-->Mapa</strong>
+							<div style="text-align:center">
+								<!--<img src='##GOOGLE_MAP###' />-->
+								<img src="https://ci6.googleusercontent.com/proxy/d2kggeOtlIhBvAkZJpDmDlrgc2MBXNx6Nm_twdVqxKUZY133dIACctQ9fz-MecEag-crH8_1WnHPyfTggtJjbEc6qRnX4me1pQPuGBBjDo2vU-L_xXG3oWpXIY6T67QvHVX6AhxnPKauGB5QCNq5wob0A3mwMzVh8CYdMjRUGEeAqhKfbfQIE2bXOQPPhJq-7_ftbZ7rVtiDlgKx6U_FcNsPm43Vc9Y7uVeXHr8T5BYzsg=s0-d-e1-ft#http://maps.google.com/maps/api/staticmap?center=13.679814,-89.248489&amp;zoom=16&amp;size=340x250&amp;markers=color:pink%7Clabel:M%7C13.679814,-89.248489&amp;sensor=false" class="CToWUd a6T" tabindex="0" style="width:100%;max-width:340px;height:auto">
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div style="background:#ddd;padding:10px 0px;margin:0px; text-align:center;font-size:14px;color:#000;">
+					<!--Email--><!--Correo electr&oacute;nico ##SITE_NAME##: ##CONTACT_LINK##-->
+					<!--Email-->Correo electr&oacute;nico Cupón Club: <a href="mailto:info@cuponclub.net" target="_blank">info@cuponclub.net</a>
+				</div>
+				<div style="margin:0px 0px;padding:20px 10px;font-size:10px;text-align:left">
+					<h6 style="margin:0px;padding:0px;color:#000;font-size:13px;"><!--Legal Stuff We Have To Say:-->Cuestiones legales que tenemos que decir:</h6>
+					<p style="amrgin:0px;padding:0px;font-size:11px;line-heihgt:13px;" >
+						<!--General terms applicable to all Vouchers (unless otherwise set forth below, in--><!--Los t&eacute;rminos generales se aplican a todos los Cupones (a menos que sea especificado de otra manera a continuaci&oacute;n, en los T&eacute;rminos y Condiciones de Venta de ##SITE_NAME##):--><!--'s Terms of Sale, or in the Fine Print): Unless prohibited by applicable law the following restrictions also apply. See below for further details. However, even if the promotional offer stated on your--><!-- A menos que sea prohibido por las leyes vigentes, las siguientes restricciones tambi&eacute;n aplican. Leer abajo para mayores detalles. Sin embargo, incluso si la oferta promocional detallada en tu ##SITE_NAME## --><!--has expired, applicable law may require the merchant to allow you to redeem your Voucher beyond its expiration date for goods/services equal to the amount you paid for it. If you have gone to the merchant and the merchant has refused to redeem the cash value of your expired Voucher, and if applicable law entitles you to such redemption,--><!--ha expirado, las leyes vigentes podr&iacute;n requerir al comerciante que te permita canjear tu Cup&oacute;n despu&eacute;s de la fecha de expiraci&oacute;n por bienes/servicios iguales a la cantidad que t&uacute; pagaste por el Cup&oacute;n. Si t&uacute; te has dirigido al comerciante y este se ha negado a canjear el valor en efectivo por tu Cup&oacute;n vencido, y si las leyes vigentes te dan el derecho de exigir el canje, ##SITE_NAME## --><!--will refund the purchase price of the Voucher per its Terms of Sale. Partial Redemptions: If you redeem the Voucher for less than its face value, you only will be entitled to a credit or cash equal to the difference between the face value and the amount you redeemed from the merchant if applicable law requires it. If you redeem this--><!--te reembolsar&aacute; el precio del Cup&oacute;n seg&uacute;n los T&eacute;rminos de la Venta. Devoluciones Parciales: Si t&uacute; canjeas el Cup&oacute;n por menos del valor nominal, tendr&aacute;s derecho solamente a un cr&eacute;dito o efectivo igual a la diferencia entre el valor nominal y la cantidad que canjeaste del comerciante si la ley lo demanda. Si canjeas este Cup&oacute;n ##SITE_NAME## --><!--Voucher for less than the total face value, you will not be entitled to receive any credit or cash for the difference between the face value and the amount you redeemed, (unless otherwise required by applicable law). You will only be entitled to a redemption value equal to the amount you paid for the--><!--por menos del valor nomnal total, tendr&aacute;s derecho a recibir el cr&eacute;dito o efectivo por la diferencia entre el valor nominal y la cantidad que canjeaste, (a menos que se especifique de otra manera por las leyes vigentes). T&uacute; solamente tendr&aacute;s derecho a canjear un valor igual a la cantidad que pagaste por ##SITE_NAME## --><!--less the amount actually redeemed. The redemption value will be reduced by the amount of purchases made. This--><!-- menos la cantidad que realmente canjeaste. El valor de canje ser&aacute; reducido por la cantidad de la compra hecha. Sobre la fecha de expiraci&oacute;n ##SITE_NAME## --><!--expiration date above, the merchant will, in its discretion: (1) allow you to redeem this Voucher for the product or service specified on the Voucher or (2) allow you to redeem the Voucher to purchase other goods or services from the merchant for up to the amount you paid for the Voucher. This Voucher can only can be used for making purchases of goods/services at the named merchant. Merchant is solely responsible for Voucher redemption. Vouchers cannot be redeemed for cash or applied as payment to any account unless required by applicable law. Neither--><!-- mencionada, el comerciante podr&aacute;, a su discreci&oacute;n: (1) permitirte canjear este Cup&oacute;n por el producto o servicio especificado en el Cup&oacute;n o (2) permitirte canjear el Cup&oacute;n para comprar otros productos o servicios del comerciante por un valor m&aacute;ximo igual a la cantidad que pagaste por el Cup&oacute;n. Este Cup&oacute;n puede solamente ser usado para comprar productos/servicios al comerciante nombrado. El comerciante es el &uacute;nico responsable de canjear Cupones. Los Cupones no pueden ser canjeados por efectivo o usados como pago a ninguna cuenta a menos que sea requerido por las leyes vigentes. ##SITE_NAME##, --><!--, Inc. nor the named merchant shall be responsible for --><!-- ni el comerciante nombrado ser&aacute;n responsables por cupones ##SITE_NAME##--><!--s Vouchers that are lost or damaged. Use of Vouchers are subject to--><!--que sean perdidos o da&ntilde;ados. El uso de Cupones est&aacute; sujeto a los T&eacute;rminos de Venta de ##SITE_NAME##--><!--'s Terms of Sale--><!--</p>-->
+						<!--General terms applicable to all Vouchers (unless otherwise set forth below, in-->Los t&eacute;rminos generales se aplican a todos los Cupones (a menos que sea especificado de otra manera a continuaci&oacute;n, en los T&eacute;rminos y Condiciones de Venta de Cupón Club):<!--'s Terms of Sale, or in the Fine Print): Unless prohibited by applicable law the following restrictions also apply. See below for further details. However, even if the promotional offer stated on your--> A menos que sea prohibido por las leyes vigentes, las siguientes restricciones tambi&eacute;n aplican. Leer abajo para mayores detalles. Sin embargo, incluso si la oferta promocional detallada en tu Cupón Club <!--has expired, applicable law may require the merchant to allow you to redeem your Voucher beyond its expiration date for goods/services equal to the amount you paid for it. If you have gone to the merchant and the merchant has refused to redeem the cash value of your expired Voucher, and if applicable law entitles you to such redemption,-->ha expirado, las leyes vigentes podr&iacute;n requerir al comerciante que te permita canjear tu Cup&oacute;n despu&eacute;s de la fecha de expiraci&oacute;n por bienes/servicios iguales a la cantidad que t&uacute; pagaste por el Cup&oacute;n. Si t&uacute; te has dirigido al comerciante y este se ha negado a canjear el valor en efectivo por tu Cup&oacute;n vencido, y si las leyes vigentes te dan el derecho de exigir el canje, Cupón Club <!--will refund the purchase price of the Voucher per its Terms of Sale. Partial Redemptions: If you redeem the Voucher for less than its face value, you only will be entitled to a credit or cash equal to the difference between the face value and the amount you redeemed from the merchant if applicable law requires it. If you redeem this-->te reembolsar&aacute; el precio del Cup&oacute;n seg&uacute;n los T&eacute;rminos de la Venta. Devoluciones Parciales: Si t&uacute; canjeas el Cup&oacute;n por menos del valor nominal, tendr&aacute;s derecho solamente a un cr&eacute;dito o efectivo igual a la diferencia entre el valor nominal y la cantidad que canjeaste del comerciante si la ley lo demanda. Si canjeas este Cup&oacute;n Cupón Cupón <!--Voucher for less than the total face value, you will not be entitled to receive any credit or cash for the difference between the face value and the amount you redeemed, (unless otherwise required by applicable law). You will only be entitled to a redemption value equal to the amount you paid for the-->por menos del valor nominal total, tendr&aacute;s derecho a recibir el cr&eacute;dito o efectivo por la diferencia entre el valor nominal y la cantidad que canjeaste, (a menos que se especifique de otra manera por las leyes vigentes). T&uacute; solamente tendr&aacute;s derecho a canjear un valor igual a la cantidad que pagaste por Cupón Club <!--less the amount actually redeemed. The redemption value will be reduced by the amount of purchases made. This--> menos la cantidad que realmente canjeaste. El valor de canje ser&aacute; reducido por la cantidad de la compra hecha. Sobre la fecha de expiraci&oacute;n Cupón Club <!--expiration date above, the merchant will, in its discretion: (1) allow you to redeem this Voucher for the product or service specified on the Voucher or (2) allow you to redeem the Voucher to purchase other goods or services from the merchant for up to the amount you paid for the Voucher. This Voucher can only can be used for making purchases of goods/services at the named merchant. Merchant is solely responsible for Voucher redemption. Vouchers cannot be redeemed for cash or applied as payment to any account unless required by applicable law. Neither--> mencionada, el comerciante podr&aacute;, a su discreci&oacute;n: (1) permitirte canjear este Cup&oacute;n por el producto o servicio especificado en el Cup&oacute;n o (2) permitirte canjear el Cup&oacute;n para comprar otros productos o servicios del comerciante por un valor m&aacute;ximo igual a la cantidad que pagaste por el Cup&oacute;n. Este Cup&oacute;n puede solamente ser usado para comprar productos/servicios al comerciante nombrado. El comerciante es el &uacute;nico responsable de canjear Cupones. Los Cupones no pueden ser canjeados por efectivo o usados como pago a ninguna cuenta a menos que sea requerido por las leyes vigentes. Cupón Club, <!--, Inc. nor the named merchant shall be responsible for --> ni el comerciante nombrado ser&aacute;n responsables por cupones Cupón Club <!--s Vouchers that are lost or damaged. Use of Vouchers are subject to-->que sean perdidos o da&ntilde;ados. El uso de Cupones est&aacute; sujeto a los T&eacute;rminos de Venta de Cupón Club<!--'s Terms of Sale-->
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
