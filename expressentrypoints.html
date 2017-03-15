@@ -13,7 +13,7 @@
 	</script>
 	<script type="text/javascript">
 		window.onload = function () {
-			var points = [886, 852, 808, 735, 481, 453, 469, 453, 755, 482, 469, 463, 451, 471, 456, 459, 450, 450, 489, 484, 472, 461, 460, 461, 453, 457, 459, 453, 473, 470, 470, 468, 534, 484, 483, 488, 482, 482, 488, 490, 538, 491];
+			var points = [886, 852, 808, 735, 481, 453, 469, 453, 755, 482, 469, 463, 451, 471, 456, 459, 450, 450, 489, 484, 472, 461, 460, 461, 453, 457, 459, 453, 473, 470, 470, 468, 534, 484, 483, 488, 482, 482, 488, 490, 538, 491, 483, 484, 475, 472, 470, 786, 497, 475, 468, 459, 453, 447, 441, 434];
 			var sum = 0, avg = 0;
 			for( var i = 0; i < points.length; i++ ){
     				sum = sum + points[i];
@@ -92,7 +92,21 @@
 					{ x: new Date(2016, 6, 27), y: points[38] },
 					{ x: new Date(2016, 7, 10), y: points[39] },
 					{ x: new Date(2016, 7, 24), y: points[40] },
-					{ x: new Date(2016, 8, 7), y: points[41] }
+					{ x: new Date(2016, 8, 7), y: points[41] },
+					{ x: new Date(2016, 8, 21), y: points[42] },
+					{ x: new Date(2016, 9, 12), y: points[43] },
+					{ x: new Date(2016, 9, 19), y: points[44] },
+					{ x: new Date(2016, 10, 2), y: points[45] },
+					{ x: new Date(2016, 10, 16), y: points[46] },
+					{ x: new Date(2016, 10, 30), y: points[47] },
+					{ x: new Date(2016, 11, 16), y: points[48] },
+					{ x: new Date(2016, 11, 22), y: points[49] },
+					{ x: new Date(2017, 0, 4), y: points[50] },
+					{ x: new Date(2017, 0, 11), y: points[51] },
+					{ x: new Date(2017, 0, 25), y: points[52] },
+					{ x: new Date(2017, 1, 8), y: points[53] },
+					{ x: new Date(2017, 1, 22), y: points[54] },
+					{ x: new Date(2017, 2, 1), y: points[55] }
 					]
 				},
 				{
@@ -143,7 +157,21 @@
 					{ x: new Date(2016, 6, 27), y: (points.slice(0,39).reduce(function add(a,b){return a+b;},0))/39 },
 					{ x: new Date(2016, 7, 10), y: (points.slice(0,40).reduce(function add(a,b){return a+b;},0))/40 },
 					{ x: new Date(2016, 7, 24), y: (points.slice(0,41).reduce(function add(a,b){return a+b;},0))/41 },
-					{ x: new Date(2016, 8, 7), y: (points.slice(0,42).reduce(function add(a,b){return a+b;},0))/42 }
+					{ x: new Date(2016, 8, 7), y: (points.slice(0,42).reduce(function add(a,b){return a+b;},0))/42 },
+					{ x: new Date(2016, 8, 21), y: (points.slice(0,43).reduce(function add(a,b){return a+b;},0))/43 },
+					{ x: new Date(2016, 9, 12), y: (points.slice(0,44).reduce(function add(a,b){return a+b;},0))/44 },
+					{ x: new Date(2016, 9, 19), y: (points.slice(0,45).reduce(function add(a,b){return a+b;},0))/45 },
+					{ x: new Date(2016, 10, 2), y: (points.slice(0,46).reduce(function add(a,b){return a+b;},0))/46 },
+					{ x: new Date(2016, 10, 16), y: (points.slice(0,47).reduce(function add(a,b){return a+b;},0))/47 },
+					{ x: new Date(2016, 10, 30), y: (points.slice(0,48).reduce(function add(a,b){return a+b;},0))/48 },
+					{ x: new Date(2016, 11, 16), y: (points.slice(0,49).reduce(function add(a,b){return a+b;},0))/49 },
+					{ x: new Date(2016, 11, 22), y: (points.slice(0,50).reduce(function add(a,b){return a+b;},0))/50 },
+					{ x: new Date(2017, 0, 4), y: (points.slice(0,51).reduce(function add(a,b){return a+b;},0))/51 },
+					{ x: new Date(2017, 0, 11), y: (points.slice(0,52).reduce(function add(a,b){return a+b;},0))/52 },
+					{ x: new Date(2017, 0, 25), y: (points.slice(0,53).reduce(function add(a,b){return a+b;},0))/53 },
+					{ x: new Date(2017, 1, 8), y: (points.slice(0,54).reduce(function add(a,b){return a+b;},0))/54 },
+					{ x: new Date(2017, 1, 22), y: (points.slice(0,55).reduce(function add(a,b){return a+b;},0))/55 },
+					{ x: new Date(2017, 2, 1), y: (points.slice(0,56).reduce(function add(a,b){return a+b;},0))/56 }		
 					]
 				},
 				{
@@ -194,7 +222,21 @@
 					{ x: new Date(2016, 6, 27), y: average },
 					{ x: new Date(2016, 7, 10), y: average },
 					{ x: new Date(2016, 7, 24), y: average },
-					{ x: new Date(2016, 8, 7), y: average }
+					{ x: new Date(2016, 8, 7), y: average },
+					{ x: new Date(2016, 8, 21), y: average },
+					{ x: new Date(2016, 9, 12), y: average },
+					{ x: new Date(2016, 9, 19), y: average },
+					{ x: new Date(2016, 10, 2), y: average },
+					{ x: new Date(2016, 10, 16), y: average },
+					{ x: new Date(2016, 10, 30), y: average },
+					{ x: new Date(2016, 11, 16), y: average },
+					{ x: new Date(2016, 11, 22), y: average },
+					{ x: new Date(2017, 0, 4), y: average },
+					{ x: new Date(2017, 0, 11), y: average },
+					{ x: new Date(2017, 0, 25), y: average },
+					{ x: new Date(2017, 1, 8), y: average },
+					{ x: new Date(2017, 1, 22), y: average },
+					{ x: new Date(2017, 2, 1), y: average }
 					]
 				}
 				],
