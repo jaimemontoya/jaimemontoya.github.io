@@ -8,15 +8,15 @@
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
     };
 
-    $jq1(function() {
+    $(function() {
         // Setup the carousels. Adjust the options for both carousels here.
-        var carouselStage      = $jq1('.carousel-stage').jcarousel();
-        var carouselNavigation = $jq1('.carousel-navigation').jcarousel();
+        var carouselStage      = $('.carousel-stage').jcarousel();
+        var carouselNavigation = $('.carousel-navigation').jcarousel();
 
         // We loop through the items of the navigation carousel and set it up
         // as a control for an item from the stage carousel.
         carouselNavigation.jcarousel('items').each(function() {
-            var item = $jq1(this);
+            var item = $(this);
 
             // This is where we actually connect to items.
             var target = connector(item, carouselStage);
@@ -36,46 +36,46 @@
         });
 
         // Setup controls for the stage carousel
-        $jq1('.prev-stage')
+        $('.prev-stage')
             .on('jcarouselcontrol:inactive', function() {
-                $jq1(this).addClass('inactive');
+                $(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $jq1(this).removeClass('inactive');
+                $(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '-=1'
             });
 
-        $jq1('.next-stage')
+        $('.next-stage')
             .on('jcarouselcontrol:inactive', function() {
-                $jq1(this).addClass('inactive');
+                $(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $jq1(this).removeClass('inactive');
+                $(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '+=1'
             });
 
         // Setup controls for the navigation carousel
-        $jq1('.prev-navigation')
+        $('.prev-navigation')
             .on('jcarouselcontrol:inactive', function() {
-                $jq1(this).addClass('inactive');
+                $(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $jq1(this).removeClass('inactive');
+                $(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '-=1'
             });
 
-        $jq1('.next-navigation')
+        $('.next-navigation')
             .on('jcarouselcontrol:inactive', function() {
-                $jq1(this).addClass('inactive');
+                $(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $jq1(this).removeClass('inactive');
+                $(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '+=1'
