@@ -1,4 +1,4 @@
-(function($) {
+(function($jq1) {
     // This is the connector function.
     // It connects one item from the navigation carousel to one item from the
     // stage carousel.
@@ -8,15 +8,15 @@
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
     };
 
-    $(function() {
+    $jq1(function() {
         // Setup the carousels. Adjust the options for both carousels here.
-        var carouselStage      = $('.carousel-stage').jcarousel();
-        var carouselNavigation = $('.carousel-navigation').jcarousel();
+        var carouselStage      = $jq1('.carousel-stage').jcarousel();
+        var carouselNavigation = $jq1('.carousel-navigation').jcarousel();
 
         // We loop through the items of the navigation carousel and set it up
         // as a control for an item from the stage carousel.
         carouselNavigation.jcarousel('items').each(function() {
-            var item = $(this);
+            var item = $jq1(this);
 
             // This is where we actually connect to items.
             var target = connector(item, carouselStage);
@@ -36,46 +36,46 @@
         });
 
         // Setup controls for the stage carousel
-        $('.prev-stage')
+        $jq1('.prev-stage')
             .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
+                $jq1(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
+                $jq1(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '-=1'
             });
 
-        $('.next-stage')
+        $jq1('.next-stage')
             .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
+                $jq1(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
+                $jq1(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '+=1'
             });
 
         // Setup controls for the navigation carousel
-        $('.prev-navigation')
+        $jq1('.prev-navigation')
             .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
+                $jq1(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
+                $jq1(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '-=1'
             });
 
-        $('.next-navigation')
+        $jq1('.next-navigation')
             .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
+                $jq1(this).addClass('inactive');
             })
             .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
+                $jq1(this).removeClass('inactive');
             })
             .jcarouselControl({
                 target: '+=1'
