@@ -1,3 +1,4 @@
+jQuery.noConflict();
 (function($) {
     // This is the connector function.
     // It connects one item from the navigation carousel to one item from the
